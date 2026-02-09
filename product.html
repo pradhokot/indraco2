@@ -28,22 +28,27 @@
       }
 
       .article-header>.category-icon {
-         display: block;
+         opacity: 1;
+         transition: .3s ease-in-out;
+         pointer-events: visible;
       }
       
       .article-header:hover>.category-icon,
       .article-header:focus>.category-icon {
-         display: none;
+         opacity: 0;
          pointer-events: none;
       }
 
       .article-header>.category-brands {
-         display: none;
+         opacity: 0;
+         transition: .3s ease-in-out;
+         pointer-events: none;
       }
       
       .article-header:hover>.category-brands,
       .article-header:focus>.category-brands {
-         display: block;
+         opacity: 1;
+         pointer-events: visible;
       }
 
       .img-logo {
@@ -67,7 +72,7 @@
    <main id="main-content">
 
       <section class="bg-secondary">
-         <div id="carouselBanner" class="carousel carousel-fade slide" data-bs-slide="carousel" data-bs-pause="false" data-bs-theme="light">
+         <div id="carouselBanner" class="carousel carousel-fade slide" data-bs-ride="carousel" data-bs-pause="false" data-bs-theme="light">
             <div class="carousel-indicators">
                <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="1" aria-label="Slide 2"></button>

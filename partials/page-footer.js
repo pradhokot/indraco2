@@ -5,8 +5,10 @@ document.writeln(`
          <div class="row row-gap-5 gx-md-5 justify-content-lg-between py-lg-3">
             <div class="col col-12 col-lg-auto order-lg-1 d-lg-flex flex-lg-column">
                <div class="flex-lg-grow-1">
-                  <img src="img/logo-indraco-light.png" alt="logo INDRACO di kaki halaman" class="w-100 h-auto" style="max-width: 16.5em;">
-                  <p class="small">Roasting Fine Exquisite Coffee Since 1971.</p>
+                  <!-- <img src="img/logo-indraco-light.png" alt="logo INDRACO di kaki halaman" class="w-100 h-auto" style="max-width: 16.5em;"> -->
+                  <!-- <p class="small">Roasting Fine Exquisite Coffee Since 1971.</p> -->
+                  <img src="img/logo-indraco-light.png" alt="logo INDRACO di kaki halaman" class="w-100 h-auto" style="max-width: 18.75em;">
+                  <p class="small">Indonesia Leading FMCG Company Since 1971.</p>
                </div>
                <nav aria-label="navigasi sosial media" class="d-flex flex-wrap gap-3 flex-lg-grow-0">
                   <a href="#" target="_blank" aria-label="tautan sosial media X Twitter">
