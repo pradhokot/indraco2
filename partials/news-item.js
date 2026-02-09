@@ -4,7 +4,7 @@ document.writeln(`
       <meta itemprop="publisher" content="Indraco">
       <meta itemprop="dateModified" content="2026-12-01">
       <header class="card-header ratio ratio-16x9 w-100 border-0">
-         <img itemprop="image" src="img/gallery.jpg" alt="judul artikel" class="object-fit-cover z-0">
+         <img itemprop="image" src="img/gallery.jpg" alt="judul artikel" loading="lazy" class="object-fit-cover z-0">
          <div class="z-1 inset-0 gradient-top-top"></div>
          <div class="top-unset bottom-0 h-auto p-4 z-2">
             <h3 itemprop="headline" class="card-title fs-5 text-3-line text-capitalize fw-bold">

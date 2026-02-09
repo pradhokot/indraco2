@@ -28,3 +28,16 @@ document.addEventListener('DOMContentLoaded', function () {
       }
    });
 });
+
+
+// Active page statis
+const links = document.querySelectorAll("ul a");
+const currentPage = window.location.pathname.split("/").pop();
+
+links.forEach(link => {
+   const linkPage = link.getAttribute("href");
+
+   if (linkPage === currentPage) {
+      link.classList.add("active");
+   }
+});

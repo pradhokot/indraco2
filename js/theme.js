@@ -20,7 +20,20 @@ document.addEventListener('DOMContentLoaded', function () {
       html.setAttribute('data-bs-theme', theme);
       if (save) localStorage.setItem('theme', theme);
       updateThemeImages(theme);
+      syncInvertedCarousels(theme);
    }
+
+   /* =========================
+      CAROUSEL SWITCHER
+   ========================== */
+   function syncInvertedCarousels(theme) {
+      const inverted = theme === 'dark' ? 'light' : 'dark';
+
+      document.querySelectorAll('.carousel-invert').forEach(el => {
+         el.setAttribute('data-bs-theme', inverted);
+      });
+   }
+
 
    /* =========================
       IMAGE SWITCHER

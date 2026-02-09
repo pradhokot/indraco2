@@ -1,6 +1,6 @@
 document.writeln(`
    <header role="banner" class="fixed-top">
-      <nav aria-label="navigasi utama" class="navbar navbar-expand-lg bg-body-secondary">
+      <nav aria-label="navigasi utama" class="navbar navbar-expand-lg bg-body-secondary border-bottom">
          <div class="container flex-nowrap column-gap-4 d-lg-grid" style="grid-template-columns: 1fr auto 1fr;">
 
             <!-- Brand --> 
