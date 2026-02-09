@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id" dir="ltr">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>INDRACO &ndash; Berita & Acara</title>
+   <link rel="shortcut icon" href="img/icon-indraco.ico" type="image/x-icon">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="fonts/HelveticaNeue/HelveticaNeue.css">
+   <link rel="stylesheet" href="css/theme.css">
+   <link rel="stylesheet" href="css/frontend.css">
+   <style>
+      /* * {outline: solid 1px green;} */
+   </style>
+</head>
+<body>
+   <a href="#main-content" class="visually-hidden-focusable">
+      Lewati ke konten utama
+   </a>
+   <script src="partials/page-header.js"></script>
+   <script src="partials/offcanvas-navigation.js"></script>
+   <main id="main-content">
+
+      <section class="py-5" aria-labelledby="section-title">
+         <div class="container py-lg-5">
+            <h1 id="section-title" class="fs-1 fw-bold text-capitalize text-center mb-5">berita terbaru</h1>
+            <form action="" aria-labelledby="cari-berita">
+               <h2 id="cari-berita" class="visually-hidden">cari dan saring beita/ artikel</h2>
+               <div class="d-flex gap-2 flex-column flex-sm-row justify-content-sm-end mb-4">
+                  <div class="form-group">
+                     <div class="input-group border border-primary">
+                        <label for="search-news" class="visually-hidden">Cari berita</label>
+                        <input type="search" name="search" id="search-news" class="form-control rounded-0 border-0 bg-transparent" placeholder="Cari Berita">
+                        <button type="submit" aria-label="cari artikel" class="btn rounded-0 border-0">
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em"><path fill="currentColor" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"></path></svg>
+                        </button>
+                     </div>
+                  </div>
+                  <div class="form-group">
+                     <label for="filter-news" class="visually-hidden">Saring berita</label>
+                     <select name="filter" id="filter-news" class="form-select rounded-0 border-primary">
+                        <option value="0" selected>Saring</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                        <option value="4">Option 4</option>
+                        <option value="5">Option 5</option>
+                     </select>
+                  </div>
+               </div>
+            </form>
+            <ul class="list-unstyled article-list d-grid gap-4" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
+               <li class="article-item">
+                  <script src="partials/news-item.js"></script>
+               </li>
+               <li class="article-item">
+                  <script src="partials/news-item.js"></script>
+               </li>
+               <li class="article-item">
+                  <script src="partials/news-item.js"></script>
+               </li>
+               <li class="article-item">
+                  <script src="partials/news-item.js"></script>
+               </li>
+               <li class="article-item">
+                  <script src="partials/news-item.js"></script>
+               </li>
+               <li class="article-item">
+                  <script src="partials/news-item.js"></script>
+               </li>
+               <li class="article-item">
+                  <script src="partials/news-item.js"></script>
+               </li>
+               <li class="article-item">
+                  <script src="partials/news-item.js"></script>
+               </li>
+               <li class="article-item">
+                  <script src="partials/news-item.js"></script>
+               </li>
+            </ul>
+            <nav class="pt-4" aria-label="Navigasi halaman berita">
+               <ul class="pagination justify-content-center mb-0">
+
+                  <!-- Tombol Previous -->
+                  <li class="page-item disabled">
+                     <a class="page-link rounded-0" href="#" tabindex="-1" aria-disabled="true">
+                        <span aria-hidden="true">&laquo;</span>
+                        <span class="visually-hidden">Halaman sebelumnya</span>
+                     </a>
+                  </li>
+
+                  <!-- Halaman 1 -->
+                  <li class="page-item active" aria-current="page">
+                     <span class="page-link rounded-0">
+                        1
+                        <span class="visually-hidden">(halaman saat ini)</span>
+                     </span>
+                  </li>
+
+                  <!-- Halaman 2 -->
+                  <li class="page-item">
+                     <a class="page-link rounded-0" href="?page=2">2</a>
+                  </li>
+
+                  <!-- Halaman 3 -->
+                  <li class="page-item">
+                     <a class="page-link rounded-0" href="?page=3">3</a>
+                  </li>
+
+                  <!-- Dots -->
+                  <li class="page-item disabled">
+                     <span class="page-link rounded-0">…</span>
+                  </li>
+
+                  <!-- Halaman terakhir -->
+                  <li class="page-item">
+                     <a class="page-link rounded-0" href="?page=10">10</a>
+                  </li>
+
+                  <!-- Tombol Next -->
+                  <li class="page-item">
+                     <a class="page-link rounded-0" href="?page=2">
+                        <span aria-hidden="true">&raquo;</span>
+                        <span class="visually-hidden">Halaman berikutnya</span>
+                     </a>
+                  </li>
+
+               </ul>
+            </nav>
+         </div>
+      </section>
+      
+   </main>
+   <script src="partials/page-footer.js"></script>
+   <script src="js/jquery-3.7.1.min.js"></script>
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/theme.js"></script>
+   <script src="js/frontend.js"></script>
+</body>
+</html>
