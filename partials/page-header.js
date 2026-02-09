@@ -1,19 +1,19 @@
 document.writeln(`
    <header role="banner" class="fixed-top">
       <nav aria-label="navigasi utama" class="navbar navbar-expand-lg bg-body-secondary border-bottom">
-         <div class="container flex-nowrap column-gap-4 d-lg-grid" style="grid-template-columns: 1fr auto 1fr;">
+         <div class="container flex-nowrap column-gap-4">
 
             <!-- Brand --> 
             <div class="me-auto">
-                <a href="index.html" class="navbar-brand d-flex" aria-label="INDRACO beranda">
-                  <img src="img/logo-indraco.png" data-light="img/logo-indraco.png" data-dark="img/logo-indraco-invert.png" alt="Logo INDRACO" class="theme-image">
+                <a href="index.html" class="navbar-brand d-flex me-lg-0" aria-label="INDRACO beranda">
+                  <img src="img/logo-indraco2.png" data-light="img/logo-indraco2.png" data-dark="img/logo-indraco2-invert.png" alt="Logo INDRACO" class="theme-image">
                   <span class="visually-hidden">INDRACO</span>
                </a>
             </div>
 
             <!-- Desktop Menu -->
             <div class="navbar-collapse collapse">
-               <ul class="list-unstyled mb-0 d-flex flex-wrap gap-4 text-capitalize column-gap-xxl-5">
+               <ul class="list-unstyled mb-0 d-flex flex-wrap justify-content-center row-gap-1 column-gap-4 text-capitalize column-gap-xxl-5 mx-lg-auto">
                   <li><a href="about.html" class="ins">tentang kami</a></li>
                   <li><a href="product.html" class="ins">produk</a></li>
                   <li><a href="download.html" class="ins">unduh</a></li>

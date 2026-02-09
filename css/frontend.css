@@ -67,14 +67,18 @@ body>main {
 }
 
 .navbar-brand img {
-   width: 160px;
-   height: 31.75px;
+   /* width: 160px; */
+   /* height: 31.75px; */
+   width: 100%;
+   max-width: 260px;
+   height: auto;
 }
 
 @media (min-width: 992px) {
    .navbar-brand img {
-      width: 192px;
-      height: 38.1px;
+      /* width: 192px; */
+      /* height: 38.1px; */
+      max-width: 360px;
    }
 }
 
