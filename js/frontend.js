@@ -58,3 +58,20 @@ function updateCarouselControls() {
 }
 
 document.addEventListener('DOMContentLoaded', updateCarouselControls);
+
+
+// 2 line text (Mengambil semua elemen dengan class 'text-line-2')
+const elements = document.querySelectorAll(".text-line-2");
+
+elements.forEach((el) => {
+   const words = el.innerText.trim().split(" ");
+
+   // Menghitung titik tengah jumlah kata
+   const middle = Math.ceil(words.length / 2);
+
+   // Membagi kata menjadi dua bagian dan menggabungkannya kembali dengan <br>
+   const baris1 = words.slice(0, middle).join(" ");
+   const baris2 = words.slice(middle).join(" ");
+
+   el.innerHTML = `${baris1}<br>${baris2}`;
+});
