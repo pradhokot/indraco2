@@ -41,3 +41,20 @@ links.forEach(link => {
       link.classList.add("active");
    }
 });
+
+
+// menyembunyikan carousel control jika slider hanya satu
+function updateCarouselControls() {
+  document.querySelectorAll('.carousel').forEach(carousel => {
+    const items = carousel.querySelectorAll('.carousel-item');
+    const prev = carousel.querySelector('.carousel-control-prev');
+    const next = carousel.querySelector('.carousel-control-next');
+
+    const hide = items.length <= 1;
+
+    prev?.classList.toggle('d-none', hide);
+    next?.classList.toggle('d-none', hide);
+  });
+}
+
+document.addEventListener('DOMContentLoaded', updateCarouselControls);
