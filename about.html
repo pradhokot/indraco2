@@ -13,13 +13,29 @@
    <style>
       /* * {outline: solid 1px green;} */
 
-      .section-content {padding: calc(3rem + 2vw) 0;}
+      .section-content {
+         padding: calc(3rem + 2vw) 0;
+         z-index: 10;
+      }
+
       @media (min-width: 992px) {
          .section-content {padding: calc(6rem + 2vw) 0;}
       }
 
       .section-header .container {max-width: 1600px;}
-      .section-body {margin-top: -20%;}
+
+      .section-body {
+         margin-top: -20%;
+         position: relative;
+         z-index: 20; /* Ensure this is higher than the pinned image's z-index */
+      }
+
+      @media (min-width: 992px) {
+         .section-body {margin-top: -26%;}
+         section[aria-labelledby="value-title"] .section-body {margin-top: -40%;}
+         section[aria-labelledby="factory-title"] .section-body {margin-top: -46%;}
+      }
+
       .section-caption {max-width: 640px;}
 
       @media (min-width: 768px) {
@@ -27,6 +43,14 @@
          .factory-header {width: 60%;}
          .factory-body {width: 40%;}
       }
+      
+      @keyframes bounce {
+         0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+         40% {transform: translateY(-10px);}
+         60% {transform: translateY(-5px);}
+      }
+
+      .scroll-down-btn svg {animation: bounce 2s infinite;}
    </style>
 </head>
 <body>
@@ -38,6 +62,16 @@
    <main id="main-content">
 
       <h1 class="visually-hidden">Tentang INDRACO</h1>
+
+      <section class="vh-100 d-none d-lg-flex justify-content-center align-items-center">
+         <a href="#about-title" class="btn scroll-down-btn">
+            SCROLL DOWN
+            <br>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+               <path d="M12 5V19M12 19L19 12M12 19L5 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+         </a>
+      </section>
 
       <section class="section-content" aria-labelledby="about-title">
          <div class="section-header">
@@ -170,7 +204,6 @@
                <div class="section-caption">
                   <header class="d-flex gap-3 align-items-center mb-3">
                      <h3 class="caption-title mb-0 display-2 fw-bold text-capitalize">misi</h3>
-                     <p class="caption-text text-line-2 mb-0"></p>
                   </header>
                   <p>Menyediakan produk-produk berkelas, berkualitas top dengan harga yang kompetitif, yang sesuai bahkan melebihi apa yang dibutuhkan konsumen.</p>
                </div>
@@ -184,7 +217,7 @@
                <img src="img/about-value-sketch.png" alt="background nilai-nilai INDRACO" loading="lazy" class="w-100 h-auto">
             </div>
          </div>
-         <div class="section-body" style="margin-top: -40%;">
+         <div class="section-body">
             <div class="container py-lg-5">
                <div class="row row-cols-1 row-gap-5">
                   <div class="col order-lg-2">
@@ -200,7 +233,7 @@
                         <li class="col">
                            <article class="d-flex gap-4 align-items-start">
                               <div class="ratio ratio-1x1 w-25">
-                                 <img src="img/about-customer-focus.png" data-light="img/about-customer-focus.png" data-dark="img/about-customer-focus-invert.png" alt="ikon fokus pada konsumen" class="object-fit-contain theme-image">
+                                 <img src="img/about-customer-focus.png" data-light="img/about-customer-focus.png" data-dark="img/about-customer-focus-invert.png" alt="" class="object-fit-contain theme-image" aria-hidden="true">
                               </div>
                               <div class="w-75">
                                  <h3 class="fs-5 fw-bold text-uppercase">fokus pada konsumen</h3>
@@ -213,7 +246,7 @@
                         <li class="col">
                            <article class="d-flex gap-4 align-items-start">
                               <div class="ratio ratio-1x1 w-25">
-                                 <img src="img/about-teamwork.png" data-light="img/about-teamwork.png" data-dark="img/about-teamwork-invert.png" alt="ikon kerja sama" class="object-fit-contain theme-image">
+                                 <img src="img/about-teamwork.png" data-light="img/about-teamwork.png" data-dark="img/about-teamwork-invert.png" alt="" class="object-fit-contain theme-image" aria-hidden="true">
                               </div>
                               <div class="w-75">
                                  <h3 class="fs-5 fw-bold text-uppercase">kerja sama</h3>
@@ -226,7 +259,7 @@
                         <li class="col">
                            <article class="d-flex gap-4 align-items-start">
                               <div class="ratio ratio-1x1 w-25">
-                                 <img src="img/about-innovation.png" data-light="img/about-innovation.png" data-dark="img/about-innovation-invert.png" alt="ikon inovasi" class="object-fit-contain theme-image">
+                                 <img src="img/about-innovation.png" data-light="img/about-innovation.png" data-dark="img/about-innovation-invert.png" alt="" class="object-fit-contain theme-image" aria-hidden="true">
                               </div>
                               <div class="w-75">
                                  <h3 class="fs-5 fw-bold text-uppercase">inovasi</h3>
@@ -239,7 +272,7 @@
                         <li class="col">
                            <article class="d-flex gap-4 align-items-start">
                               <div class="ratio ratio-1x1 w-25">
-                                 <img src="img/about-integrity.png" data-light="img/about-integrity.png" data-dark="img/about-integrity-invert.png" alt="ikon integritas" class="object-fit-contain theme-image">
+                                 <img src="img/about-integrity.png" data-light="img/about-integrity.png" data-dark="img/about-integrity-invert.png" alt="" class="object-fit-contain theme-image" aria-hidden="true">
                               </div>
                               <div class="w-75">
                                  <h3 class="fs-5 fw-bold text-uppercase">integritas</h3>
@@ -252,7 +285,7 @@
                         <li class="col">
                            <article class="d-flex gap-4 align-items-start">
                               <div class="ratio ratio-1x1 w-25">
-                                 <img src="img/about-resources.png" data-light="img/about-resources.png" data-dark="img/about-resources-invert.png" alt="ikon sumber daya" class="object-fit-contain theme-image">
+                                 <img src="img/about-resources.png" data-light="img/about-resources.png" data-dark="img/about-resources-invert.png" alt="" class="object-fit-contain theme-image" aria-hidden="true">
                               </div>
                               <div class="w-75">
                                  <h3 class="fs-5 fw-bold text-uppercase">sumber daya</h3>
@@ -275,7 +308,7 @@
                <img src="img/about-factory-sketch.png" alt="background pabrik INDRACO" loading="lazy" class="w-100 h-auto">
             </div>
          </div>
-         <div class="section-body" style="margin-top: -46%;">
+         <div class="section-body">
             <div class="container py-lg-5">
                <div class="row row-cols-1 row-gap-5">
                   <div class="col order-lg-2">
@@ -297,7 +330,7 @@
                                  <h3 class="fs-5 fw-bold text-uppercase mb-2">PT. Indraco Global Indonesia</h3>
                                  <p class="small mb-2">Driyorejo, Gresik Mfg. Facility</p>
                                  <p>Jl. Semeru No. 133-135 Bambe, Kec. Driyorejo. Gresik 61177 Jawa Timur - Indonesia.</p>
-                                 <a href="#" target="_blank" rel="noopener" class="text-capitalize text-decoration-underline text-primary">antar saya kesana</a>
+                                 <a href="#" target="_blank" rel="noopener" class="text-capitalize text-decoration-underline text-primary" aria-label="Lihat lokasi Pabrik Bambe di peta">antar saya kesana</a>
                               </div>
                            </article>
                         </li>
@@ -310,7 +343,7 @@
                                  <h3 class="fs-5 fw-bold text-uppercase mb-2">PT. Indraco Global Indonesia</h3>
                                  <p class="small mb-2">Dumai Mfg. Facility</p>
                                  <p>Jl. Pemuda Darat no.11 Kel. Pangkalan Sesai, Dumai Barat 28824 - Riau</p>
-                                 <a href="#" target="_blank" rel="noopener" class="text-capitalize text-decoration-underline text-primary">antar saya kesana</a>
+                                 <a href="#" target="_blank" rel="noopener" class="text-capitalize text-decoration-underline text-primary" aria-label="Lihat lokasi Pabrik Dumai di peta">antar saya kesana</a>
                               </div>
                            </article>
                         </li>
@@ -327,5 +360,172 @@
    <script src="js/bootstrap.bundle.min.js"></script>
    <script src="js/theme.js"></script>
    <script src="js/frontend.js"></script>
+   <script src="js/gsap.min.js"></script>
+   <script src="js/ScrollTrigger.min.js"></script>
+   <script>
+      document.addEventListener("DOMContentLoaded", function() {
+         gsap.registerPlugin(ScrollTrigger);
+
+         const brushPathData = "M149.3,385.3c80.9-72.6,141.6-121.7,150.3-113.5c16.7,15.7-169,235.8-155.9,247.5 c25.7,22.9,414.8-344.3,430.4-328.3c13.7,14-277.5,307.8-258.5,328.3c22.8,24.6,469.3-364.7,492.5-339.7 c20,21.6-297.9,331.5-274.4,357.8c28.3,31.6,519.3-382.7,549.4-349.5C1109,216.3,777.9,552.3,791,565.4 c14.3,14.2,413.1-378.2,434.8-357.9c24.2,22.7-445.4,536.6-416.6,564.8c32.4,31.7,668.6-576.2,685-559.2 c16.6,17.1-617.2,645.4-595.6,668.3c21.3,22.5,662.5-556.6,680.9-536.9c16.6,17.9-497.3,507.6-471.1,536.9 c24.3,27.2,492.6-366.2,517.3-338.3c21.4,24.3-310.2,347.9-299.2,359.3c11.1,11.4,355.7-310,370.5-295 c11.6,11.8-193.5,218-174.8,239.1c12.1,13.5,113-54.4,255.8-162.2";
+
+         ScrollTrigger.matchMedia({
+            // Desktop only
+            "(min-width: 992px)": function() {
+               const headers = document.querySelectorAll('.section-header .container');
+               const cleanupItems = [];
+
+               headers.forEach((container, index) => {
+                  const img = container.querySelector('img');
+                  if (!img) return;
+
+                  // Hide original image
+                  const originalDisplay = img.style.display;
+                  img.style.display = 'none';
+
+                  // Create SVG structure
+                  const svgNS = "http://www.w3.org/2000/svg";
+                  const svg = document.createElementNS(svgNS, "svg");
+                  svg.setAttribute("viewBox", "0 0 1920 1080");
+                  svg.setAttribute("class", "w-100 h-auto brush-svg");
+                  svg.setAttribute("preserveAspectRatio", "xMidYMid slice");
+                  
+                  // Accessibility: Transfer alt text to SVG title if available
+                  if (img.alt) {
+                     const titleId = `svg-title-${index}`;
+                     const title = document.createElementNS(svgNS, "title");
+                     title.setAttribute("id", titleId);
+                     title.textContent = img.alt;
+                     svg.appendChild(title);
+                     svg.setAttribute("aria-labelledby", titleId);
+                     svg.setAttribute("role", "img");
+                  } else {
+                     svg.setAttribute("aria-hidden", "true"); // Hide decorative images
+                  }
+                  
+                  const defs = document.createElementNS(svgNS, "defs");
+                  const maskId = `brushMask-dynamic-${index}`;
+                  const mask = document.createElementNS(svgNS, "mask");
+                  mask.setAttribute("id", maskId);
+
+                  const path = document.createElementNS(svgNS, "path");
+                  path.setAttribute("d", brushPathData);
+                  path.setAttribute("fill", "none");
+                  path.setAttribute("stroke", "white");
+                  path.setAttribute("stroke-width", "150");
+                  path.setAttribute("stroke-linecap", "round");
+                  path.setAttribute("stroke-linejoin", "round");
+                  path.classList.add("drawPath");
+
+                  mask.appendChild(path);
+                  defs.appendChild(mask);
+                  svg.appendChild(defs);
+
+                  const svgImage = document.createElementNS(svgNS, "image");
+                  // Use href instead of xlink:href for modern support, but xlink for compatibility if needed.
+                  // Most modern browsers support href.
+                  svgImage.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", img.src);
+                  svgImage.setAttribute("width", "1920");
+                  svgImage.setAttribute("height", "1080");
+                  svgImage.setAttribute("preserveAspectRatio", "xMidYMid slice");
+                  svgImage.setAttribute("mask", `url(#${maskId})`);
+
+                  svg.appendChild(svgImage);
+                  container.appendChild(svg);
+
+                  // Store for cleanup
+                  cleanupItems.push({
+                     img: img,
+                     svg: svg,
+                     originalDisplay: originalDisplay
+                  });
+
+                  // Animation
+                  const length = path.getTotalLength();
+                  gsap.set(path, {
+                     strokeDasharray: length,
+                     strokeDashoffset: length
+                  });
+
+                  // Ensure text appears above pinned image
+                  container.style.position = 'relative';
+                  container.style.zIndex = '1'; 
+                  
+                  // Find the next sibling (section-body) and ensure it's on top
+                  const nextSibling = container.parentElement.querySelector('.section-body');
+                  if (nextSibling) {
+                     nextSibling.style.position = 'relative';
+                     nextSibling.style.zIndex = '10'; // Higher z-index to be above the pinned image
+                     nextSibling.style.backgroundColor = 'transparent'; // Ensure transparency if needed, or set a bg color to block
+                  }
+                  
+                  // To fix overlapping:
+                  // The issue likely stems from pin: true without pinSpacing handling the layout flow correctly for multiple sections,
+                  // or the sections following too closely.
+                  // We will use pinSpacing: true (default) which adds padding to push content down.
+                  // And we'll ensure the trigger is the entire section-header, not just the container if structure allows, 
+                  // but sticking to container is fine if we manage spacing.
+                  
+                  gsap.to(path, {
+                     strokeDashoffset: 0,
+                     ease: "none",
+                     scrollTrigger: {
+                        trigger: container,
+                        start: "top top", // Start pinning when image hits top
+                        end: "+=100%", // Pin for a distance equal to 100% of viewport height (or adjust duration)
+                        pin: true,
+                        pinSpacing: true, // IMPORTANT:Push following content down so it doesn't overlap immediately
+                        scrub: 1,
+                        // Prevent overlap by ensuring z-index handling during pin
+                        onEnter: () => gsap.set(container, { zIndex: 1 }),
+                        onLeave: () => gsap.set(container, { zIndex: 0 }) 
+                     }
+                  });
+               });
+
+               // 2. Parallax Text (Text moves slightly slower/faster than scroll)
+               // Reduced intensity to prevent overlap/clash with pinned elements
+               gsap.utils.toArray('.section-caption').forEach(caption => {
+                   gsap.fromTo(caption, 
+                     { y: 50 }, // Starting a bit lower
+                     {
+                        y: -50, // Moving up acting as a parallax
+                        ease: "none",
+                        scrollTrigger: {
+                           trigger: caption,
+                           start: "top bottom",
+                           end: "bottom top",
+                           scrub: 1
+                        }
+                     }
+                  );
+               });
+
+               // 3. Stagger Animation for "Nilai Kami" (Values)
+               const valueSection = document.querySelector('section[aria-labelledby="value-title"]');
+               if (valueSection) {
+                  const listItems = valueSection.querySelectorAll('li');
+                  // Ensure they are hidden initially
+                  gsap.set(listItems, { opacity: 0, y: 50 });
+                  
+                  ScrollTrigger.batch(listItems, {
+                     start: "top 85%",
+                     onEnter: batch => gsap.to(batch, {opacity: 1, y: 0, stagger: 0.15, overwrite: true}),
+                     onLeave: batch => gsap.set(batch, {opacity: 0, y: -50, overwrite: true}),
+                     onEnterBack: batch => gsap.to(batch, {opacity: 1, y: 0, stagger: 0.15, overwrite: true}),
+                     onLeaveBack: batch => gsap.set(batch, {opacity: 0, y: 50, overwrite: true})
+                  });
+               }
+
+               // Cleanup function to restore state when matching media query changes
+               return function() {
+                  cleanupItems.forEach(item => {
+                     item.img.style.display = item.originalDisplay;
+                     item.svg.remove();
+                  });
+               };
+            }
+         });
+      });
+   </script>
 </body>
 </html>
