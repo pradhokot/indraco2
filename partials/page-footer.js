@@ -112,8 +112,8 @@ document.writeln(`
       </div>
       <div class="bg-dark py-4">
          <div class="container d-lg-flex justify-content-lg-between column-gap-lg-5">
-            <p class="opacity-50">
-               © <script>document.write(new Date().getFullYear())</script> INDRACO. Semua hak dilindungi undang-undang.
+            <p class="opacity-50 small">
+               Dikembangkan oleh Webdev © <script>document.write(new Date().getFullYear())</script> INDRACO. Semua hak dilindungi undang-undang.
             </p>
             <ul class="list-unstyled d-flex flex-wrap gap-2 text-capitalize justify-content-lg-end">
                <li><a href="#" target="_blank" class="ins">kebijakan privasi</a></li>
