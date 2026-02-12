@@ -18,8 +18,8 @@ document.writeln(`
       <div class="offcanvas-footer p-3 d-lg-none">
          <hr>
          <ul class="list-unstyled text-capitalize">
-            <li><a href="#" class="ins d-block py-2">INDRACO store</a></li>
-            <li><a href="#" class="ins d-block py-2">kontak</a></li>
+            <li><a href="https://indracostore.com/" target="_blank" class="ins d-block py-2">INDRACO store</a></li>
+            <li><a href="contact.html" class="ins d-block py-2">kontak</a></li>
          </ul>
       </div>
    </aside>
