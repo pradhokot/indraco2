@@ -1,8 +1,9 @@
 document.writeln(`
-   <a href="vacancy.html" class="text-decoration-none">
       <article class="card w-100 rounded-0 bg-light-subtle border-0">
          <div class="text-bg-primary p-4">
-            <h4 class="card-title fs-4 fw-bold text-capitalize">Quality Assurance Senior Manager</h4>
+            <h4 class="card-title fs-4 fw-bold text-capitalize">
+               <a href="vacancy.html" class="text-reset text-decoration-none stretched-link">Quality Assurance Senior Manager</a>
+            </h4>
             <p class="card-text small">Penuh Waktu</p>
          </div>
          <div class="p-4">
@@ -34,5 +35,4 @@ document.writeln(`
             </div>
          </div>
       </article>
-   </a>
 `)
