@@ -16,6 +16,7 @@
    --bs-light-bg-subtle: #ffffff;
    --bs-light-bg-subtle-rgb: 255, 255, 255;
    --bs-link-color: #01645b;
+   --bs-secondary-color: rgba(var(--bs-body-color-rgb), 0.5);
 }
 
 [data-bs-theme=dark] {
@@ -32,6 +33,7 @@
    --bs-light-bg-subtle: #333333;
    --bs-light-bg-subtle-rgb: 51, 51, 51;
    --bs-link-color: #ffffff;
+   --bs-secondary-color: rgba(var(--bs-body-color-rgb), 0.5);
 }
 
 @media (min-width: 992px) {
@@ -199,4 +201,8 @@ a.active {
   --bs-pagination-border-color: var(--bs-border-color);
   --bs-pagination-active-bg: var(--bs-primary);
   --bs-pagination-active-border-color: var(--bs-primary);
+}
+
+.breadcrumb {
+   font-size: .875em !important;
 }

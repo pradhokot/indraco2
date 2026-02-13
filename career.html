@@ -136,8 +136,9 @@
          <div class="container py-lg-5">
             <header class="text-center mx-auto" style="max-width: 65rem;">
                <h2 id="vacancy-title" class="fs-1 fw-bold text-capitalize mb-3">
-                  <span>lowongan pekerjaan</span> 
+                  <!-- *hidden salah satu jika ada lowongan atau tidak -->
                   <!-- <span class="text-danger d-block">saat ini kami tidak membuka lowongan pekerjaan</span> -->
+                  <span>lowongan pekerjaan</span> 
                </h2>
                <p class="fs-4">
                   Waspadai Penipuan Rekrutmen Karyawan Atas Nama INDRACO Group !!!
@@ -146,8 +147,10 @@
                   PT Indraco Global Indonesia tidak pernah memungut biaya apa pun dalam proses rekrutmen. Waspadai penipuan dengan memeriksa email dan situs web resmi kami untuk lowongan pekerjaan. Kami tidak bertanggung jawab atas penipuan yang dilakukan atas nama perusahaan kami. Untuk informasi lebih lanjut, hubungi kami melalui Email : <a href="mailto:recruitment@indraco.com" target="_blank" class="fw-bold">recruitment@indraco.com</a>
                </p>
             </header>
+
+            <!-- *hidden jika tidak ada lowongan -->
             <div class="pt-5">
-               <form action="" role="search" class="pt-lg-5 mb-5">
+               <form class="pt-lg-5 mb-5">
                   <div class="d-flex flex-column gap-3 flex-md-row">
                      <div class="form-group flex-md-grow-1">
                         <div class="input-group">
@@ -156,20 +159,25 @@
                            <button class="btn btn-lg btn-primary rounded-0">Cari</button>
                         </div>
                      </div>
-                     <div class="flex-md-grow-0">
-                        <button aria-label="trigger menu filter lowongan pekerjaan" class="btn btn-lg btn-primary rounded-0 w-100 text-capitalize" style="min-width: 12rem;">
-                           <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-funnel-fill" viewBox="0 0 16 16"><path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5z"/></svg>
-                           saring
-                        </button>
+                     <div class="form-group flex-md-grow-0">
+                        <label class="visually-hidden" for="select-position">seleksi dafatar lowongan berdasarkan jabatan</label>
+                        <select name="select position" id="select-position" class="form-select form-select-lg rounded-0 border-primary">
+                           <option value="o" selected>Pilih Sesuai Jabatan</option>
+                           <option value="manager">Manager</option>
+                           <option value="supervisor">Supervisor</option>
+                           <option value="staff">Staff</option>
+                           <option value="aspr">ASPR</option>
+                           <option value="wroker">Worker</option>
+                        </select>
                      </div>
                   </div>
                </form>
                <h3 class="visually-hidden">daftar lowongan pekerjaan</h3>
                <ol class="list-unstyled vacancy-list row row-gap-4">
-                  <li class="vacancy-item col col-12 col-lg-6"><script src="vacancy-item.js"></script></li>
-                  <li class="vacancy-item col col-12 col-lg-6"><script src="vacancy-item.js"></script></li>
-                  <li class="vacancy-item col col-12 col-lg-6"><script src="vacancy-item.js"></script></li>
-                  <li class="vacancy-item col col-12 col-lg-6"><script src="vacancy-item.js"></script></li>
+                  <li class="vacancy-item col col-12 col-lg-6"><script src="partials/vacancy-item.js"></script></li>
+                  <li class="vacancy-item col col-12 col-lg-6"><script src="partials/vacancy-item.js"></script></li>
+                  <li class="vacancy-item col col-12 col-lg-6"><script src="partials/vacancy-item.js"></script></li>
+                  <li class="vacancy-item col col-12 col-lg-6"><script src="partials/vacancy-item.js"></script></li>
                </ol>
             </div>
          </div>

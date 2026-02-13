@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id" dir="ltr">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Lamar Pekerjaan - Quality Assurance Senior Manager | INDRACO</title>
+   <link rel="shortcut icon" href="img/icon-indraco.ico" type="image/x-icon">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="fonts/HelveticaNeue/HelveticaNeue.css">
+   <link rel="stylesheet" href="css/theme.css">
+   <link rel="stylesheet" href="css/frontend.css">
+   <style>
+      .form-section {
+         background-color: var(--bs-body-bg);
+         padding: 2rem;
+         border: 1px solid var(--bs-border-color);
+         margin-bottom: 2rem;
+      }
+      .form-section-title {
+         font-size: 1.25rem;
+         font-weight: bold;
+         margin-bottom: 1.5rem;
+         border-bottom: 2px solid var(--bs-primary);
+         padding-bottom: 0.5rem;
+         display: inline-block;
+      }
+      .required::after {
+         content: " *";
+         color: var(--bs-danger);
+      }
+   </style>
+</head>
+<body>
+   <a href="#main-content" class="visually-hidden-focusable">
+      Lewati ke konten utama
+   </a>
+   <script src="partials/page-header.js"></script>
+   <script src="partials/offcanvas-navigation.js"></script>
+   <main id="main-content" class="pb-5">
+
+      <!-- Breadcrumb -->
+      <div class="bg-body-tertiary border-bottom mb-4 sticky-top">
+         <div class="container py-3">
+            <nav aria-label="breadcrumb">
+               <ol class="breadcrumb mb-0">
+                  <li class="breadcrumb-item"><a href="career.html" class="text-decoration-none">Karir</a></li>
+                  <li class="breadcrumb-item"><a href="vacancy.html" class="text-decoration-none">Quality Assurance Senior Manager</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Formulir Lamaran</li>
+               </ol>
+            </nav>
+         </div>
+      </div>
+
+      <div class="container">
+         <div class="row justify-content-center">
+            <div class="col-lg-10">
+               
+               <div class="text-center mb-5">
+                  <h1 class="fw-bold mb-3">Formulir Lamaran Pekerjaan</h1>
+                  <p class="lead">Posisi: <span class="fw-bold text-primary">Quality Assurance Senior Manager</span></p>
+                  <p class="text-muted small">Silakan lengkapi formulir di bawah ini dengan data yang benar dan valid.</p>
+               </div>
+
+               <form action="#" method="POST" enctype="multipart/form-data">
+                  
+                  <!-- Data Pribadi -->
+                  <div class="form-section">
+                     <h2 class="form-section-title">Data Pribadi</h2>
+                     <div class="row g-3">
+                        <div class="col-md-6">
+                           <label for="fullName" class="form-label required">Nama Lengkap (Sesuai KTP)</label>
+                           <input type="text" class="form-control rounded-0" id="fullName" name="fullName" required>
+                        </div>
+                        <div class="col-md-6">
+                           <label for="nik" class="form-label required">NIK (Nomor Induk Kependudukan)</label>
+                           <input type="number" class="form-control rounded-0" id="nik" name="nik" required>
+                        </div>
+                        <div class="col-md-6">
+                           <label for="email" class="form-label required">Alamat Email</label>
+                           <input type="email" class="form-control rounded-0" id="email" name="email" placeholder="contoh@email.com" required>
+                        </div>
+                        <div class="col-md-6">
+                           <label for="phone" class="form-label required">Nomor Telepon / WhatsApp</label>
+                           <input type="tel" class="form-control rounded-0" id="phone" name="phone" placeholder="08xxxxxxxxxx" required>
+                        </div>
+                        <div class="col-md-6">
+                           <label for="placeOfBirth" class="form-label required">Tempat Lahir</label>
+                           <input type="text" class="form-control rounded-0" id="placeOfBirth" name="placeOfBirth" required>
+                        </div>
+                        <div class="col-md-6">
+                           <label for="dateOfBirth" class="form-label required">Tanggal Lahir</label>
+                           <input type="date" class="form-control rounded-0" id="dateOfBirth" name="dateOfBirth" required>
+                        </div>
+                        <div class="col-md-6">
+                           <label for="gender" class="form-label required">Jenis Kelamin</label>
+                           <select class="form-select rounded-0" id="gender" name="gender" required>
+                              <option value="" selected disabled>Pilih...</option>
+                              <option value="Laki-laki">Laki-laki</option>
+                              <option value="Perempuan">Perempuan</option>
+                           </select>
+                        </div>
+                        <div class="col-md-6">
+                           <label for="maritalStatus" class="form-label required">Status Pernikahan</label>
+                           <select class="form-select rounded-0" id="maritalStatus" name="maritalStatus" required>
+                              <option value="" selected disabled>Pilih...</option>
+                              <option value="Belum Menikah">Belum Menikah</option>
+                              <option value="Menikah">Menikah</option>
+                              <option value="Cerai">Cerai</option>
+                           </select>
+                        </div>
+                        <div class="col-12">
+                           <label for="address" class="form-label required">Alamat Lengkap (Sesuai KTP)</label>
+                           <textarea class="form-control rounded-0" id="address" name="address" rows="3" required></textarea>
+                        </div>
+                        <div class="col-12">
+                           <label for="currentAddress" class="form-label">Alamat Domisili Sekarang (Jika berbeda dengan KTP)</label>
+                           <textarea class="form-control rounded-0" id="currentAddress" name="currentAddress" rows="3"></textarea>
+                        </div>
+                     </div>
+                  </div>
+
+                  <!-- Pendidikan Terakhir -->
+                  <div class="form-section">
+                     <h2 class="form-section-title">Pendidikan Terakhir</h2>
+                     <div class="row g-3">
+                        <div class="col-md-6">
+                           <label for="educationLevel" class="form-label required">Jenjang Pendidikan</label>
+                           <select class="form-select rounded-0" id="educationLevel" name="educationLevel" required>
+                              <option value="" selected disabled>Pilih...</option>
+                              <option value="SMA/SMK">SMA / SMK</option>
+                              <option value="D3">Diploma 3 (D3)</option>
+                              <option value="D4/S1">Sarjana (D4 / S1)</option>
+                              <option value="S2">Magister (S2)</option>
+                           </select>
+                        </div>
+                        <div class="col-md-6">
+                           <label for="institution" class="form-label required">Nama Institusi / Universitas</label>
+                           <input type="text" class="form-control rounded-0" id="institution" name="institution" required>
+                        </div>
+                        <div class="col-md-6">
+                           <label for="major" class="form-label required">Jurusan / Program Studi</label>
+                           <input type="text" class="form-control rounded-0" id="major" name="major" required>
+                        </div>
+                        <div class="col-md-3">
+                           <label for="gpa" class="form-label required">IPK / Nilai Rata-rata</label>
+                           <input type="number" step="0.01" class="form-control rounded-0" id="gpa" name="gpa" placeholder="Contoh: 3.50" required>
+                        </div>
+                        <div class="col-md-3">
+                           <label for="graduationYear" class="form-label required">Tahun Lulus</label>
+                           <input type="number" class="form-control rounded-0" id="graduationYear" name="graduationYear" placeholder="YYYY" required>
+                        </div>
+                     </div>
+                  </div>
+
+                  <!-- Pengalaman Kerja -->
+                  <div class="form-section">
+                     <h2 class="form-section-title">Pengalaman Kerja Terakhir</h2>
+                     <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" id="freshGraduate" name="freshGraduate">
+                        <label class="form-check-label" for="freshGraduate">
+                           Saya belum memiliki pengalaman kerja (Fresh Graduate)
+                        </label>
+                     </div>
+                     <div id="experienceFields" class="row g-3">
+                        <div class="col-md-6">
+                           <label for="companyName" class="form-label">Nama Perusahaan</label>
+                           <input type="text" class="form-control rounded-0" id="companyName" name="companyName">
+                        </div>
+                        <div class="col-md-6">
+                           <label for="position" class="form-label">Posisi / Jabatan</label>
+                           <input type="text" class="form-control rounded-0" id="position" name="position">
+                        </div>
+                        <div class="col-md-6">
+                           <label for="startDate" class="form-label">Mulai Bekerja</label>
+                           <input type="month" class="form-control rounded-0" id="startDate" name="startDate">
+                        </div>
+                        <div class="col-md-6">
+                           <label for="endDate" class="form-label">Selesai Bekerja</label>
+                           <input type="month" class="form-control rounded-0" id="endDate" name="endDate">
+                           <div class="form-text">Biarkan kosong jika masih bekerja.</div>
+                        </div>
+                        <div class="col-12">
+                           <label for="jobDescription" class="form-label">Deskripsi Pekerjaan Singkat</label>
+                           <textarea class="form-control rounded-0" id="jobDescription" name="jobDescription" rows="3"></textarea>
+                        </div>
+                     </div>
+                  </div>
+
+                  <!-- Upload Dokumen -->
+                  <div class="form-section">
+                     <h2 class="form-section-title">Dokumen Pendukung</h2>
+                     <div class="alert alert-info rounded-0 small mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle me-1" viewBox="0 0 16 16">
+                           <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                           <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                        </svg>
+                        Format yang diterima: PDF, JPG, PNG. Maksimal ukuran file: 2MB per file.
+                     </div>
+                     <div class="mb-3">
+                        <label for="cv" class="form-label required">Curriculum Vitae (CV) / Resume Terupdate</label>
+                        <input class="form-control rounded-0" type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required>
+                     </div>
+                     <div class="mb-3">
+                        <label for="ktp" class="form-label required">Scan KTP</label>
+                        <input class="form-control rounded-0" type="file" id="ktp" name="ktp" accept=".jpg,.jpeg,.png,.pdf" required>
+                     </div>
+                     <div class="mb-3">
+                        <label for="ijazah" class="form-label required">Scan Ijazah Terakhir</label>
+                        <input class="form-control rounded-0" type="file" id="ijazah" name="ijazah" accept=".jpg,.jpeg,.png,.pdf" required>
+                     </div>
+                     <div class="mb-3">
+                        <label for="transkrip" class="form-label">Scan Transkrip Nilai</label>
+                        <input class="form-control rounded-0" type="file" id="transkrip" name="transkrip" accept=".jpg,.jpeg,.png,.pdf">
+                     </div>
+                     <div class="mb-3">
+                        <label for="portofolio" class="form-label">Portofolio (Opsional)</label>
+                        <input class="form-control rounded-0" type="file" id="portofolio" name="portofolio" accept=".pdf">
+                        <div class="form-text">Disarankan untuk posisi kreatif / teknis tertentu.</div>
+                     </div>
+                  </div>
+
+                  <!-- Submit -->
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-4">
+                     <a href="vacancy.html" class="btn btn-secondary rounded-0 px-4">Batal</a>
+                     <button type="submit" class="btn btn-primary rounded-0 px-5 fw-bold">Kirim Lamaran</button>
+                  </div>
+
+               </form>
+            </div>
+         </div>
+      </div>
+      
+   </main>
+   <script src="partials/page-footer.js"></script>
+   <script src="js/jquery-3.7.1.min.js"></script>
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/theme.js"></script>
+   <script src="js/frontend.js"></script>
+   <script>
+      // Script sederhana untuk handle checkbox fresh graduate
+      document.getElementById('freshGraduate').addEventListener('change', function() {
+         const experienceFields = document.querySelectorAll('#experienceFields input, #experienceFields textarea');
+         if(this.checked) {
+            experienceFields.forEach(field => {
+               field.disabled = true;
+               field.value = '';
+            });
+         } else {
+            experienceFields.forEach(field => {
+               field.disabled = false;
+            });
+         }
+      });
+   </script>
+</body>
+</html>
