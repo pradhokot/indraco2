@@ -12,6 +12,12 @@
    <link rel="stylesheet" href="css/frontend.css">
    <style>
       /* * {outline: solid 1px green;} */
+
+      .nav-pills {
+         --bs-nav-pills-border-radius: 0;
+         --bs-nav-pills-link-active-bg: var(--bs-light-bg-subtle);
+         --bs-nav-link-hover-color: var(--bs-body-color);
+      }
    </style>
 </head>
 <body data-active-link="product.html">
@@ -22,18 +28,30 @@
    <script src="partials/page-header.js"></script>
    <script src="partials/offcanvas-navigation.js"></script>
    <main id="main-content">
+
+      <!-- Breadcrumb -->
+      <div class="bg-body-tertiary border-bottom mb-4">
+         <div class="container py-3">
+            <nav aria-label="breadcrumb">
+               <ol class="breadcrumb mb-0">
+                  <li class="breadcrumb-item"><a href="product.html" class="text-decoration-none">Produk Kami</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Supresso</li>
+               </ol>
+            </nav>
+         </div>
+      </div>
       
-      <header class="py-5">
+      <div class="py-5">
          <div class="container py-lg-5 text-center" style="max-width: 1140px;">
             <div class="d-flex justify-content-center align-items-center" style="height: 10rem;">
-               <img src="img/logo-tugu-buaya.png" data-light="img/logo-tugu-buaya.png" data-dark="img/logo-tugu-buaya-invert.png" alt="Logo Tugu Buaya" loading="lazy" class="theme-image" style="max-width: 21rem; max-height: 100%;">
+               <img src="img/logo-supresso.png" data-light="img/logo-supresso.png" data-dark="img/logo-supresso.png" alt="Logo Supresso" loading="lazy" class="theme-image" style="max-width: 21rem; max-height: 100%;">
             </div>
             <p class="my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nisi minus commodi quo magnam unde culpa, sint alias corporis hic cupiditate numquam fugiat consequuntur, ea eveniet consequatur, molestiae deleniti harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum accusamus magnam sed atque at sunt dicta consequuntur quia blanditiis? Necessitatibus voluptatibus voluptas dolorum assumenda ab eaque repellendus fugiat laboriosam nulla!</p>
-            <a href="#" class="btn btn-primary rounded-0 text-capitalize">kunjungi website supresso</a>
+            <a href="#" class="btn btn-invert rounded-0 text-capitalize">kunjungi website supresso</a>
          </div>
-      </header>
+      </div>
 
-      <ul class="nav nav-tabs justify-content-center" id="brandTab" role="tabList">
+      <ul class="nav nav-pills justify-content-center" id="brandTab" role="tabList">
          <li class="nav-item" role="presentation">
             <button class="nav-link text-uppercase active" id="single-origin-tab" data-bs-toggle="tab" data-bs-target="#single-origin-tab-pane" type="button" role="tab" aria-controls="single-origin-tab-pane" aria-selected="true">single origin</button>
          </li>
@@ -54,13 +72,38 @@
          </li>
       </ul>
 
-      <div class="tab-content py-5" id="brandTabContent">
-         <div class="tab-pane fade show active" id="single-origin-tab-pane" role="tabpanel" aria-labelledby="single-origin-tab" tabindex="0">single origin</div>
-         <div class="tab-pane fade" id="gourmet-tab-pane" role="tabpanel" aria-labelledby="gourmet-tab" tabindex="0">gourmet</div>
-         <div class="tab-pane fade" id="world-blend-tab-pane" role="tabpanel" aria-labelledby="world-blend-tab" tabindex="0">world blend</div>
-         <div class="tab-pane fade" id="the-collection-tab-pane" role="tabpanel" aria-labelledby="the-collection-tab" tabindex="0">the collection</div>
-         <div class="tab-pane fade" id="kraton-tab-pane" role="tabpanel" aria-labelledby="kraton-tab" tabindex="0">kraton</div>
-         <div class="tab-pane fade" id="accessories-tab-pane" role="tabpanel" aria-labelledby="accessories-tab" tabindex="0">accessories</div>
+      <div class="brand-list tab-content" id="brandTabContent">
+         
+         <!-- tab pane category item -->
+         <div class="brand-category tab-pane fade show active" id="single-origin-tab-pane" role="tabpanel" aria-labelledby="single-origin-tab" tabindex="0">
+            <div class="container py-5">
+               <ol class="list-unstyled mb-5 d-flex flex-wrap gap-4 justify-content-center">
+                  <li><a href="#" class="p-5 bg-primary rounded-circle d-block"></a></li>
+                  <li><a href="#" class="p-5 bg-primary rounded-circle d-block"></a></li>
+                  <li><a href="#" class="p-5 bg-primary rounded-circle d-block"></a></li>
+                  <li><a href="#" class="p-5 bg-primary rounded-circle d-block"></a></li>
+                  <li><a href="#" class="p-5 bg-primary rounded-circle d-block"></a></li>
+                  <li><a href="#" class="p-5 bg-primary rounded-circle d-block"></a></li>
+                  <li><a href="#" class="p-5 bg-primary rounded-circle d-block"></a></li>
+               </ol>
+            </div>
+         </div>
+         
+         <!-- tab pane category item -->
+         <div class="brand-category tab-pane fade" id="gourmet-tab-pane" role="tabpanel" aria-labelledby="gourmet-tab" tabindex="0">gourmet</div>
+         
+         <!-- tab pane category item -->
+         <div class="brand-category tab-pane fade" id="world-blend-tab-pane" role="tabpanel" aria-labelledby="world-blend-tab" tabindex="0">world blend</div>
+         
+         <!-- tab pane category item -->
+         <div class="brand-category tab-pane fade" id="the-collection-tab-pane" role="tabpanel" aria-labelledby="the-collection-tab" tabindex="0">the collection</div>
+         
+         <!-- tab pane category item -->
+         <div class="brand-category tab-pane fade" id="kraton-tab-pane" role="tabpanel" aria-labelledby="kraton-tab" tabindex="0">kraton</div>
+         
+         <!-- tab pane category item -->
+         <div class="brand-category tab-pane fade" id="accessories-tab-pane" role="tabpanel" aria-labelledby="accessories-tab" tabindex="0">accessories</div>
+
       </div>
       
    </main>

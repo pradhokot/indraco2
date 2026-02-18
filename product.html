@@ -12,19 +12,26 @@
    <link rel="stylesheet" href="css/frontend.css">
    <style>
       /* * {outline: solid 1px green;} */
-   
+
       .img-logo {
-         width: 56%;
-         height: auto;
-         max-height: 40%;
+         max-width: 75%;
+         max-height: 90%;
+      }
+
+      .bg-category-icon {
+         aspect-ratio: 1/1;
+         height: 90%;
+         width: auto;
+      }
+
+      .carousel-invert .carousel-inner {
+         width: 70%;
       }
    
-      /* Category Brands Interactions */
       .category-icon {
          transition: opacity 0.3s ease, visibility 0.3s ease;
       }
    
-      /* Mobile: Hide icon when active (clicked) */
       @media (max-width: 991.98px) {
          .category-item.active .category-icon {
             opacity: 0;
@@ -32,7 +39,6 @@
          }
       }
    
-      /* Desktop: Hide icon on hover */
       @media (min-width: 992px) {
          .category-item:hover .category-icon {
             opacity: 0;
@@ -136,60 +142,61 @@
       <section class="py-5 text-center" aria-labelledby="brands">
          <div class="container py-lg-5">
             <h2 id="brands" class="fs-1 fw-bold text-capitalize mb-5">produk kami</h2>
-            <ul class="list-unstyled mb-0 category-list d-grid gap-5" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+            <ul class="list-unstyled mb-0 category-list d-grid gap-5 gap-lg-0" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
                <li class="category-item">
 
                   <article>
-                     <div class="article-header ratio ratio-1x1">
+                     <div class="article-header ratio ratio-16x9 overflow-hidden">
                         <div class="category-icon top-50 start-50 translate-middle z-1 bg-body">
-                           <div class="ratio ratio-1x1 bg-primary rounded-circle">
-                              <img src="img/coffee.png" alt="" loading="lazy" class="top-50 start-50 translate-middle icon-category w-25 h-auto">
+                           <div class="ratio ratio-16x9">
+                              <img src="img/coffee.png" alt="" loading="lazy" class="icon-category object-fit-contain top-50 start-50 translate-middle w-50 h-50 z-1">
+                              <div class="bg-primary rounded-circle z-0 bg-category-icon top-50 start-50 translate-middle"></div>
                            </div>
                         </div>
                         <div class="category-brands top-50 start-50 translate-middle z-0 bg-body">
-                           <div id="carouselBrandsCoffee" class="carousel slide carousel-invert">
+                           <div id="carouselBrandsCoffee" class="carousel slide carousel-invert d-flex align-items-center h-100 justify-content-center">
+                              <button class="position-static carousel-control-prev" type="button" data-bs-target="#carouselBrandsCoffee" data-bs-slide="prev">
+                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                 <span class="visually-hidden">Previous</span>
+                              </button>
                               <div class="carousel-inner">
                                  <div class="carousel-item active">
-                                    <a href="brand.html" target="_blank" class="text-reset text-decoration-none ratio ratio-1x1 d-block">
+                                    <a href="brand.html" class="text-reset text-decoration-none ratio ratio-16x9 d-block">
                                        <img src="img/logo-supresso.png" data-light="img/logo-supresso.png" data-dark="img/logo-supresso.png" alt="Logo Supresso" loading="lazy" class="object-fit-contain theme-image img-logo top-50 start-50 translate-middle">
                                     </a>
                                  </div>
                                  <div class="carousel-item">
-                                    <a href="brand.html" target="_blank" class="text-reset text-decoration-none ratio ratio-1x1 d-block">
+                                    <a href="brand.html" class="text-reset text-decoration-none ratio ratio-16x9 d-block">
                                        <img src="img/logo-balicafe.png" data-light="img/logo-balicafe.png" data-dark="img/logo-balicafe.png" alt="Logo BaliCafé" loading="lazy" class="object-fit-contain theme-image img-logo top-50 start-50 translate-middle">
                                     </a>
                                  </div>
                                  <div class="carousel-item">
-                                    <a href="brand.html" target="_blank" class="text-reset text-decoration-none ratio ratio-1x1 d-block">
+                                    <a href="brand.html" class="text-reset text-decoration-none ratio ratio-16x9 d-block">
                                        <img src="img/logo-ucafe.png" data-light="img/logo-ucafe.png" data-dark="img/logo-ucafe-invert.png" alt="Logo UCAFÉ" loading="lazy" class="object-fit-contain theme-image img-logo top-50 start-50 translate-middle">
                                     </a>
                                  </div>
                                  <div class="carousel-item">
-                                    <a href="brand.html" target="_blank" class="text-reset text-decoration-none ratio ratio-1x1 d-block">
+                                    <a href="brand.html" class="text-reset text-decoration-none ratio ratio-16x9 d-block">
                                        <img src="img/logo-rasa-sayang.png" data-light="img/logo-rasa-sayang.png" data-dark="img/logo-rasa-sayang.png" alt="Logo Rasa Sayang" loading="lazy" class="object-fit-contain theme-image img-logo top-50 start-50 translate-middle">
                                     </a>
                                  </div>
                                  <div class="carousel-item">
-                                    <a href="brand.html" target="_blank" class="text-reset text-decoration-none ratio ratio-1x1 d-block">
+                                    <a href="brand.html" class="text-reset text-decoration-none ratio ratio-16x9 d-block">
                                        <img src="img/logo-tugu-buaya.png" data-light="img/logo-tugu-buaya.png" data-dark="img/logo-tugu-buaya-invert.png" alt="Logo Tugu Buaya" loading="lazy" class="object-fit-contain theme-image img-logo top-50 start-50 translate-middle">
                                     </a>
                                  </div>
                                  <div class="carousel-item">
-                                    <a href="brand.html" target="_blank" class="text-reset text-decoration-none ratio ratio-1x1 d-block">
+                                    <a href="brand.html" class="text-reset text-decoration-none ratio ratio-16x9 d-block">
                                        <img src="img/logo-uang-emas.png" data-light="img/logo-uang-emas.png" data-dark="img/logo-uang-emas-invert.png" alt="Logo Uang Emas" loading="lazy" class="object-fit-contain theme-image img-logo top-50 start-50 translate-middle">
                                     </a>
                                  </div>
                                  <div class="carousel-item">
-                                    <a href="brand.html" target="_blank" class="text-reset text-decoration-none ratio ratio-1x1 d-block">
+                                    <a href="brand.html" class="text-reset text-decoration-none ratio ratio-16x9 d-block">
                                        <img src="img/logo-haocafe.png" data-light="img/logo-haocafe.png" data-dark="img/logo-haocafe.png" alt="Logo Hao Cafe" loading="lazy" class="object-fit-contain theme-image img-logo top-50 start-50 translate-middle">
                                     </a>
                                  </div>
                               </div>
-                              <button class="carousel-control-prev" type="button" data-bs-target="#carouselBrandsCoffee" data-bs-slide="prev">
-                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                 <span class="visually-hidden">Previous</span>
-                              </button>
-                              <button class="carousel-control-next" type="button" data-bs-target="#carouselBrandsCoffee" data-bs-slide="next">
+                              <button class="position-static carousel-control-next" type="button" data-bs-target="#carouselBrandsCoffee" data-bs-slide="next">
                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                  <span class="visually-hidden">Next</span>
                               </button>
@@ -197,7 +204,7 @@
                         </div>
                      </div>
                      <div class="article-body">
-                        <h3 class="fs-reset fw-bold text-capitalize my-3">kopi</h3>
+                        <h3 class="fs-reset fw-bold text-capitalize">kopi</h3>
                      </div>
                   </article>
 
@@ -205,26 +212,27 @@
                <li class="category-item">
 
                   <article>
-                     <div class="article-header ratio ratio-1x1">
+                     <div class="article-header ratio ratio-16x9 overflow-hidden">
                         <div class="category-icon top-50 start-50 translate-middle z-1 bg-body">
-                           <div class="ratio ratio-1x1 bg-primary rounded-circle">
-                              <img src="img/jahe.png" alt="" loading="lazy" class="top-50 start-50 translate-middle icon-category w-25 h-auto">
+                           <div class="ratio ratio-16x9">
+                              <img src="img/jahe.png" alt="" loading="lazy" class="icon-category object-fit-contain top-50 start-50 translate-middle w-50 h-50 z-1">
+                              <div class="bg-primary rounded-circle z-0 bg-category-icon top-50 start-50 translate-middle"></div>
                            </div>
                         </div>
                         <div class="category-brands top-50 start-50 translate-middle z-0 bg-body">
-                           <div id="carouselBrandsGinger" class="carousel slide carousel-invert">
+                           <div id="carouselBrandsGinger" class="carousel slide carousel-invert d-flex align-items-center h-100 justify-content-center">
+                              <button class="position-static carousel-control-prev" type="button" data-bs-target="#carouselBrandsGinger" data-bs-slide="prev">
+                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                 <span class="visually-hidden">Previous</span>
+                              </button>
                               <div class="carousel-inner">
                                  <div class="carousel-item active">
-                                    <a href="brand.html" target="_blank" class="text-reset text-decoration-none ratio ratio-1x1 d-block">
+                                    <a href="brand.html" class="text-reset text-decoration-none ratio ratio-16x9 d-block">
                                        <img src="img/logo-jaheku.png" data-light="img/logo-jaheku.png" data-dark="img/logo-jaheku.png" alt="Logo Jaheku" loading="lazy" class="object-fit-contain theme-image img-logo top-50 start-50 translate-middle">
                                     </a>
                                  </div>
                               </div>
-                              <button class="carousel-control-prev" type="button" data-bs-target="#carouselBrandsGinger" data-bs-slide="prev">
-                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                 <span class="visually-hidden">Previous</span>
-                              </button>
-                              <button class="carousel-control-next" type="button" data-bs-target="#carouselBrandsGinger" data-bs-slide="next">
+                              <button class="position-static carousel-control-next" type="button" data-bs-target="#carouselBrandsGinger" data-bs-slide="next">
                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                  <span class="visually-hidden">Next</span>
                               </button>
@@ -232,7 +240,7 @@
                         </div>
                      </div>
                      <div class="article-body">
-                        <h3 class="fs-reset fw-bold text-capitalize my-3">jahe</h3>
+                        <h3 class="fs-reset fw-bold text-capitalize">jahe</h3>
                      </div>
                   </article>
 
@@ -240,26 +248,27 @@
                <li class="category-item">
 
                   <article>
-                     <div class="article-header ratio ratio-1x1">
+                     <div class="article-header ratio ratio-16x9 overflow-hidden">
                         <div class="category-icon top-50 start-50 translate-middle z-1 bg-body">
-                           <div class="ratio ratio-1x1 bg-primary rounded-circle">
-                              <img src="img/kelapa.png" alt="" loading="lazy" class="top-50 start-50 translate-middle icon-category w-25 h-auto">
+                           <div class="ratio ratio-16x9">
+                              <img src="img/kelapa.png" alt="" loading="lazy" class="icon-category object-fit-contain top-50 start-50 translate-middle w-50 h-50 z-1">
+                              <div class="bg-primary rounded-circle z-0 bg-category-icon top-50 start-50 translate-middle"></div>
                            </div>
                         </div>
                         <div class="category-brands top-50 start-50 translate-middle z-0 bg-body">
-                           <div id="carouselBrandsCoconut" class="carousel slide carousel-invert">
+                           <div id="carouselBrandsCoconut" class="carousel slide carousel-invert d-flex align-items-center h-100 justify-content-center">
+                              <button class="position-static carousel-control-prev" type="button" data-bs-target="#carouselBrandsCoconut" data-bs-slide="prev">
+                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                 <span class="visually-hidden">Previous</span>
+                              </button>
                               <div class="carousel-inner">
                                  <div class="carousel-item active">
-                                    <a href="brand.html" target="_blank" class="text-reset text-decoration-none ratio ratio-1x1 d-block">
+                                    <a href="brand.html" class="text-reset text-decoration-none ratio ratio-16x9 d-block">
                                        <img src="img/logo-intirasa.png" data-light="img/logo-intirasa.png" data-dark="img/logo-intirasa.png" alt="Logo IntiRasa" loading="lazy" class="object-fit-contain theme-image img-logo top-50 start-50 translate-middle">
                                     </a>
                                  </div>
                               </div>
-                              <button class="carousel-control-prev" type="button" data-bs-target="#carouselBrandsCoconut" data-bs-slide="prev">
-                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                 <span class="visually-hidden">Previous</span>
-                              </button>
-                              <button class="carousel-control-next" type="button" data-bs-target="#carouselBrandsCoconut" data-bs-slide="next">
+                              <button class="position-static carousel-control-next" type="button" data-bs-target="#carouselBrandsCoconut" data-bs-slide="next">
                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                  <span class="visually-hidden">Next</span>
                               </button>
@@ -267,7 +276,7 @@
                         </div>
                      </div>
                      <div class="article-body">
-                        <h3 class="fs-reset fw-bold text-capitalize my-3">bubuk kelapa</h3>
+                        <h3 class="fs-reset fw-bold text-capitalize">bubuk kelapa</h3>
                      </div>
                   </article>
 
@@ -275,31 +284,32 @@
                <li class="category-item">
 
                   <article>
-                     <div class="article-header ratio ratio-1x1">
+                     <div class="article-header ratio ratio-16x9 overflow-hidden">
                         <div class="category-icon top-50 start-50 translate-middle z-1 bg-body">
-                           <div class="ratio ratio-1x1 bg-primary rounded-circle">
-                              <img src="img/cocoa.png" alt="" loading="lazy" class="top-50 start-50 translate-middle icon-category w-25 h-auto">
+                           <div class="ratio ratio-16x9">
+                              <img src="img/cocoa.png" alt="" loading="lazy" class="icon-category object-fit-contain top-50 start-50 translate-middle w-50 h-50 z-1">
+                              <div class="bg-primary rounded-circle z-0 bg-category-icon top-50 start-50 translate-middle"></div>
                            </div>
                         </div>
                         <div class="category-brands top-50 start-50 translate-middle z-0 bg-body">
-                           <div id="carouselBrandsCocoa" class="carousel slide carousel-invert">
+                           <div id="carouselBrandsCocoa" class="carousel slide carousel-invert d-flex align-items-center h-100 justify-content-center">
+                              <button class="position-static carousel-control-prev" type="button" data-bs-target="#carouselBrandsCocoa" data-bs-slide="prev">
+                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                 <span class="visually-hidden">Previous</span>
+                              </button>
                               <div class="carousel-inner">
                                  <div class="carousel-item active">
-                                    <a href="brand.html" target="_blank" class="text-reset text-decoration-none ratio ratio-1x1 d-block">
+                                    <a href="brand.html" class="text-reset text-decoration-none ratio ratio-16x9 d-block">
                                        <img src="img/logo-brochoco.png" data-light="img/logo-brochoco.png" data-dark="img/logo-brochoco.png" alt="Logo Brochoco" loading="lazy" class="object-fit-contain theme-image img-logo top-50 start-50 translate-middle">
                                     </a>
                                  </div>
                                  <div class="carousel-item">
-                                    <a href="brand.html" target="_blank" class="text-reset text-decoration-none ratio ratio-1x1 d-block">
+                                    <a href="brand.html" class="text-reset text-decoration-none ratio ratio-16x9 d-block">
                                        <img src="img/logo-supresso-choco.png" data-light="img/logo-supresso-choco.png" data-dark="img/logo-supresso-choco.png" alt="Logo BaliCafé" loading="lazy" class="object-fit-contain theme-image img-logo top-50 start-50 translate-middle">
                                     </a>
                                  </div>
                               </div>
-                              <button class="carousel-control-prev" type="button" data-bs-target="#carouselBrandsCocoa" data-bs-slide="prev">
-                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                 <span class="visually-hidden">Previous</span>
-                              </button>
-                              <button class="carousel-control-next" type="button" data-bs-target="#carouselBrandsCocoa" data-bs-slide="next">
+                              <button class="position-static carousel-control-next" type="button" data-bs-target="#carouselBrandsCocoa" data-bs-slide="next">
                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                  <span class="visually-hidden">Next</span>
                               </button>
@@ -307,7 +317,7 @@
                         </div>
                      </div>
                      <div class="article-body">
-                        <h3 class="fs-reset fw-bold text-capitalize my-3">cokelat</h3>
+                        <h3 class="fs-reset fw-bold text-capitalize">cokelat</h3>
                      </div>
                   </article>
 
@@ -321,26 +331,26 @@
             <h2 id="marketplace" class="fs-1 fw-bold text-capitalize mb-5">pesan produk kami</h2>
             <div class="mb-5">
                <p class="small">Website INDRACOSTORE</p>
-               <a href="#" target="_blank" class="text-reset text-decoration-none">
+               <a href="#" class="text-reset text-decoration-none">
                   <img src="img/logo-indracostore-invert.png" alt="Logo INDRACO Store" loading="lazy" class="w-100 h-auto" style="max-width: 18rem;">
                </a>
             </div>
             <div>
                <p class="small">tersedia juga di :</p>
                <nav aria-label="online store" class="d-flex flex-wrap justify-content-center align-items-center gap-5">
-                  <a href="#" target="_blank" class="text-reset text-decoration-none">
+                  <a href="#" class="text-reset text-decoration-none">
                      <img src="img/logo-tokopedia.png" alt="Logo Tokopedia" loading="lazy" class="w-100 h-auto" style="max-width: 10rem;">
                   </a>
-                  <a href="#" target="_blank" class="text-reset text-decoration-none">
+                  <a href="#" class="text-reset text-decoration-none">
                      <img src="img/logo-shopee.png" alt="Logo Shopee" loading="lazy" class="w-100 h-auto" style="max-width: 3rem;">
                   </a>
-                  <a href="#" target="_blank" class="text-reset text-decoration-none">
+                  <a href="#" class="text-reset text-decoration-none">
                      <img src="img/logo-blibli.png" alt="Logo Blibli" loading="lazy" class="w-100 h-auto" style="max-width: 8rem;">
                   </a>
-                  <a href="#" target="_blank" class="text-reset text-decoration-none">
+                  <a href="#" class="text-reset text-decoration-none">
                      <img src="img/logo-lazada.png" alt="Logo Lazada" loading="lazy" class="w-100 h-auto" style="max-width: 4rem;">
                   </a>
-                  <a href="#" target="_blank" class="text-reset text-decoration-none">
+                  <a href="#" class="text-reset text-decoration-none">
                      <img src="img/logo-tiktokshop.png" alt="Logo TikTok Shop" loading="lazy" class="w-100 h-auto" style="max-width: 10rem;">
                   </a>
                </nav>
