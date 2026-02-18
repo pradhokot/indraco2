@@ -8,7 +8,7 @@ document.writeln(`
          </div>
          <div class="p-4">
             <p class="card-text mb-4">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ducimus ipsam quidem nisi quibusdam perspiciatis omnis at necessitatibus culpa. Dolores culpa veritatis quibusdam corrupti expedita officiis nihil dolore minima soluta.
+               Kami sedang mencari Quality Assurance Senior Manager yang berpengalaman untuk bergabung dengan tim kami. Peran ini bertanggung jawab untuk memastikan standar kualitas tertinggi dalam proses produksi dan produk akhir.
             </p>
             <div class="d-flex flex-wrap gap-3 text-muted">
                <span class="d-flex align-items-center gap-2">

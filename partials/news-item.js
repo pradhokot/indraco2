@@ -22,7 +22,7 @@ document.writeln(`
          <p itemprop="description" class="card-text text-3-line">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam error commodi aut, eaque ipsum nesciunt soluta nobis? Repellendus nemo itaque asperiores deleniti architecto possimus tempora, repellat earum voluptatum dolor neque!
          </p>               
-         <a href="#" itemprop="url" class="stretched-link text-capitalize">
+         <a href="detail-news.html" itemprop="url" class="stretched-link text-capitalize">
             lanjut baca
          </a>
       </div>

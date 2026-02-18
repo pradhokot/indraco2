@@ -206,3 +206,24 @@ a.active {
 .breadcrumb {
    font-size: .875em !important;
 }
+
+.text-justify {
+   text-align: justify;
+}
+
+.last-align-center {
+   text-align-last: center;
+}
+
+.breadcrumb {
+   --bs-breadcrumb-divider-color: currentColor !important;
+   --bs-breadcrumb-item-active-color: currentColor !important;
+}
+
+.breadcrumb-item.active {
+   opacity: .5 !important;
+}
+
+.card {
+   --bs-card-border-radius: 0;
+}

@@ -31,13 +31,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 // Active page statis
+// Active page statis
 const links = document.querySelectorAll("ul a");
 const currentPage = window.location.pathname.split("/").pop();
+const activeLinkOverride = document.body.getAttribute("data-active-link");
 
 links.forEach(link => {
    const linkPage = link.getAttribute("href");
 
-   if (linkPage === currentPage) {
+   if (linkPage === currentPage || linkPage === activeLinkOverride) {
       link.classList.add("active");
    }
 });

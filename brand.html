@@ -14,18 +14,54 @@
       /* * {outline: solid 1px green;} */
    </style>
 </head>
-<body>
-   <h1 class="visually-hidden">Halaman produk</h1>
+<body data-active-link="product.html">
+   <h1 class="visually-hidden">Supresso</h1>
    <a href="#main-content" class="visually-hidden-focusable">
       Lewati ke konten utama
    </a>
    <script src="partials/page-header.js"></script>
    <script src="partials/offcanvas-navigation.js"></script>
    <main id="main-content">
+      
+      <header class="py-5">
+         <div class="container py-lg-5 text-center" style="max-width: 1140px;">
+            <div class="d-flex justify-content-center align-items-center" style="height: 10rem;">
+               <img src="img/logo-tugu-buaya.png" data-light="img/logo-tugu-buaya.png" data-dark="img/logo-tugu-buaya-invert.png" alt="Logo Tugu Buaya" loading="lazy" class="theme-image" style="max-width: 21rem; max-height: 100%;">
+            </div>
+            <p class="my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nisi minus commodi quo magnam unde culpa, sint alias corporis hic cupiditate numquam fugiat consequuntur, ea eveniet consequatur, molestiae deleniti harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum accusamus magnam sed atque at sunt dicta consequuntur quia blanditiis? Necessitatibus voluptatibus voluptas dolorum assumenda ab eaque repellendus fugiat laboriosam nulla!</p>
+            <a href="#" class="btn btn-primary rounded-0 text-capitalize">kunjungi website supresso</a>
+         </div>
+      </header>
 
-      <section class="py-5">
-         <div class="container py-lg-5"></div>
-      </section>
+      <ul class="nav nav-tabs justify-content-center" id="brandTab" role="tabList">
+         <li class="nav-item" role="presentation">
+            <button class="nav-link text-uppercase active" id="single-origin-tab" data-bs-toggle="tab" data-bs-target="#single-origin-tab-pane" type="button" role="tab" aria-controls="single-origin-tab-pane" aria-selected="true">single origin</button>
+         </li>
+         <li class="nav-item" role="presentation">
+            <button class="nav-link text-uppercase" id="gourmet-tab" data-bs-toggle="tab" data-bs-target="#gourmet-tab-pane" type="button" role="tab" aria-controls="gourmet-tab-pane" aria-selected="false">gourmet</button>
+         </li>
+         <li class="nav-item" role="presentation">
+            <button class="nav-link text-uppercase" id="world-blend-tab" data-bs-toggle="tab" data-bs-target="#world-blend-tab-pane" type="button" role="tab" aria-controls="world-blend-tab-pane" aria-selected="false">world blend</button>
+         </li>
+         <li class="nav-item" role="presentation">
+            <button class="nav-link text-uppercase" id="the-collection-tab" data-bs-toggle="tab" data-bs-target="#the-collection-tab-pane" type="button" role="tab" aria-controls="the-collection-tab-pane" aria-selected="false">the collection</button>
+         </li>
+         <li class="nav-item" role="presentation">
+            <button class="nav-link text-uppercase" id="kraton-tab" data-bs-toggle="tab" data-bs-target="#kraton-tab-pane" type="button" role="tab" aria-controls="kraton-tab-pane" aria-selected="false">kraton</button>
+         </li>
+         <li class="nav-item" role="presentation">
+            <button class="nav-link text-uppercase" id="accessories-tab" data-bs-toggle="tab" data-bs-target="#accessories-tab-pane" type="button" role="tab" aria-controls="accessories-tab-pane" aria-selected="false">accessories</button>
+         </li>
+      </ul>
+
+      <div class="tab-content py-5" id="brandTabContent">
+         <div class="tab-pane fade show active" id="single-origin-tab-pane" role="tabpanel" aria-labelledby="single-origin-tab" tabindex="0">single origin</div>
+         <div class="tab-pane fade" id="gourmet-tab-pane" role="tabpanel" aria-labelledby="gourmet-tab" tabindex="0">gourmet</div>
+         <div class="tab-pane fade" id="world-blend-tab-pane" role="tabpanel" aria-labelledby="world-blend-tab" tabindex="0">world blend</div>
+         <div class="tab-pane fade" id="the-collection-tab-pane" role="tabpanel" aria-labelledby="the-collection-tab" tabindex="0">the collection</div>
+         <div class="tab-pane fade" id="kraton-tab-pane" role="tabpanel" aria-labelledby="kraton-tab" tabindex="0">kraton</div>
+         <div class="tab-pane fade" id="accessories-tab-pane" role="tabpanel" aria-labelledby="accessories-tab" tabindex="0">accessories</div>
+      </div>
       
    </main>
    <script src="partials/page-footer.js"></script>

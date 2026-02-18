@@ -21,7 +21,6 @@
       }
       .job-stat-label {
          font-weight: bold;
-         color: var(--bs-secondary-color);
          font-size: 0.875rem;
          margin-bottom: 0.25rem;
          text-transform: capitalize;
@@ -29,10 +28,6 @@
       .job-stat-value {
          font-weight: 500;
          text-transform: capitalize;
-      }
-      .card-company {
-         background-color: var(--bs-secondary-bg);
-         border: none;
       }
       ul.checked-list {
          list-style-type: none;
@@ -52,7 +47,7 @@
       }
    </style>
 </head>
-<body>
+<body data-active-link="career.html">
    <a href="#main-content" class="visually-hidden-focusable">
       Lewati ke konten utama
    </a>
@@ -61,7 +56,7 @@
    <main id="main-content" class="pb-5">
 
       <!-- Breadcrumb -->
-      <div class="bg-body-tertiary border-bottom mb-4 sticky-top">
+      <div class="bg-body-tertiary border-bottom mb-4">
          <div class="container py-3">
             <nav aria-label="breadcrumb">
                <ol class="breadcrumb mb-0">
@@ -162,7 +157,7 @@
 
             <!-- Kolom Sidebar (Ringkasan) -->
             <div class="col-lg-4">
-               <div class="card card-company p-4 h-100 rounded-0">
+               <div class="card text-bg-primary card-company p-4 rounded-0 border-0 sticky-top" style="top: calc(var(--navbar-height) + 1rem) !important;">
                   <h3 class="h5 fw-bold mb-4">Ringkasan Pekerjaan</h3>
                   
                   <div class="job-stat-item">
@@ -197,13 +192,13 @@
                      <img src="img/icon-indraco.ico" alt="Logo" class="me-3" style="width: 40px; height: 40px;">
                      <div>
                         <div class="fw-bold">INDRACO</div>
-                        <div class="small text-muted">FMCG / Manufacturing</div>
+                        <div class="small">FMCG / Manufacturing</div>
                      </div>
                   </div>
                   <p class="small mb-4">
                      INDRACO adalah perusahaan FMCG terkemuka di Indonesia sejak 1971, berfokus pada produksi kopi dan produk konsumen berkualitas tinggi.
                   </p>
-                  <a href="about.html" class="btn btn-invert w-100 btn-sm rounded-0">Lihat Profil Perusahaan</a>
+                  <a href="about.html" class="btn btn-outline-light w-100 btn-sm rounded-0">Lihat Profil Perusahaan</a>
                </div>
             </div>
          </div>
