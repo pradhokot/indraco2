@@ -13,7 +13,7 @@ document.writeln(`
 
             <!-- Desktop Menu -->
             <div class="navbar-collapse collapse">
-               <ul class="list-unstyled mb-0 d-flex flex-wrap justify-content-center row-gap-1 column-gap-4 text-capitalize column-gap-xxl-5 mx-lg-auto">
+               <ul class="list-unstyled mb-0 d-flex justify-content-center row-gap-1 column-gap-4 text-capitalize column-gap-xxl-5 mx-lg-auto">
                   <li><a href="about.html" class="ins">tentang kami</a></li>
                   <li><a href="product.html" class="ins">produk</a></li>
                   <li><a href="download.html" class="ins">unduh</a></li>

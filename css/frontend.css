@@ -13,7 +13,7 @@
    --bs-secondary-rgb: 51, 51, 51;
    --bs-primary: #01645b;
    --bs-primary-rgb: 1, 100, 91;
-   --bs-light-bg-subtle: #ffffff;
+   --bs-light-bg-subtle: #e8e8e8;
    --bs-light-bg-subtle-rgb: 255, 255, 255;
    --bs-link-color: #01645b;
    --bs-secondary-color: rgba(var(--bs-body-color-rgb), 0.5);
@@ -195,12 +195,12 @@ a.active {
 }
 
 .pagination {
-  --bs-pagination-color: var(--bs-link-color);
-  --bs-pagination-bg: var(--bs-body-bg);
-  --bs-pagination-border-width: var(--bs-border-width);
-  --bs-pagination-border-color: var(--bs-border-color);
-  --bs-pagination-active-bg: var(--bs-primary);
-  --bs-pagination-active-border-color: var(--bs-primary);
+   --bs-pagination-color: var(--bs-link-color);
+   --bs-pagination-bg: var(--bs-body-bg);
+   --bs-pagination-border-width: var(--bs-border-width);
+   --bs-pagination-border-color: var(--bs-border-color);
+   --bs-pagination-active-bg: var(--bs-primary);
+   --bs-pagination-active-border-color: var(--bs-primary);
 }
 
 .breadcrumb {
@@ -226,4 +226,28 @@ a.active {
 
 .card {
    --bs-card-border-radius: 0;
+}
+
+@media (min-width: 992px) {
+   .position-lg-absolute {
+      position: absolute;
+   }
+}
+
+@media (min-width: 992px) {
+   .top-lg-0 {
+      top: 0;
+   }
+}
+
+@media (min-width: 992px) {
+   .end-lg-0 {
+      right: 0;
+   }
+}
+
+@media (min-width: 992px) {
+   .opacity-lg-50 {
+      opacity: .5;
+   }
 }

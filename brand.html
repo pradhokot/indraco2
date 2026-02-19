@@ -10,27 +10,20 @@
    <link rel="stylesheet" href="fonts/HelveticaNeue/HelveticaNeue.css">
    <link rel="stylesheet" href="css/theme.css">
    <link rel="stylesheet" href="css/frontend.css">
+   <link rel="stylesheet" href="css/brand.css">
    <style>
       /* * {outline: solid 1px green;} */
-
-      .nav-pills {
-         --bs-nav-pills-border-radius: 0;
-         --bs-nav-pills-link-active-bg: var(--bs-light-bg-subtle);
-         --bs-nav-link-hover-color: var(--bs-body-color);
-      }
    </style>
 </head>
 <body data-active-link="product.html">
    <h1 class="visually-hidden">Supresso</h1>
-   <a href="#main-content" class="visually-hidden-focusable">
-      Lewati ke konten utama
-   </a>
+   <a href="#main-content" class="visually-hidden-focusable">Lewati ke konten utama</a>
    <script src="partials/page-header.js"></script>
    <script src="partials/offcanvas-navigation.js"></script>
    <main id="main-content">
 
       <!-- Breadcrumb -->
-      <div class="bg-body-tertiary border-bottom mb-4">
+      <div class="bg-body-tertiary border-bottom">
          <div class="container py-3">
             <nav aria-label="breadcrumb">
                <ol class="breadcrumb mb-0">
@@ -41,68 +34,414 @@
          </div>
       </div>
       
-      <div class="py-5">
-         <div class="container py-lg-5 text-center" style="max-width: 1140px;">
-            <div class="d-flex justify-content-center align-items-center" style="height: 10rem;">
-               <img src="img/logo-supresso.png" data-light="img/logo-supresso.png" data-dark="img/logo-supresso.png" alt="Logo Supresso" loading="lazy" class="theme-image" style="max-width: 21rem; max-height: 100%;">
-            </div>
-            <p class="my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nisi minus commodi quo magnam unde culpa, sint alias corporis hic cupiditate numquam fugiat consequuntur, ea eveniet consequatur, molestiae deleniti harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum accusamus magnam sed atque at sunt dicta consequuntur quia blanditiis? Necessitatibus voluptatibus voluptas dolorum assumenda ab eaque repellendus fugiat laboriosam nulla!</p>
-            <a href="#" class="btn btn-invert rounded-0 text-capitalize">kunjungi website supresso</a>
-         </div>
+      <div class="container py-5 text-center" style="max-width: 860px;">
+         <img src="img/logo-supresso.png" data-light="img/logo-supresso.png" data-dark="img/logo-supresso.png" alt="Logo Supresso" loading="lazy" class="theme-image" style="max-width: 21rem; max-height: 8rem;">
+         <p class="my-4">Kopi premium terbaik dengan keaslian rasa indonesia dengan biji kopi yang dipanen langsung dari timur hingga barat, koleksi kopi asli Indonesia.</p>
+         <a href="#" class="btn btn-invert rounded-0 text-capitalize">kunjungi website supresso</a>
       </div>
 
-      <ul class="nav nav-pills justify-content-center" id="brandTab" role="tabList">
-         <li class="nav-item" role="presentation">
-            <button class="nav-link text-uppercase active" id="single-origin-tab" data-bs-toggle="tab" data-bs-target="#single-origin-tab-pane" type="button" role="tab" aria-controls="single-origin-tab-pane" aria-selected="true">single origin</button>
-         </li>
-         <li class="nav-item" role="presentation">
-            <button class="nav-link text-uppercase" id="gourmet-tab" data-bs-toggle="tab" data-bs-target="#gourmet-tab-pane" type="button" role="tab" aria-controls="gourmet-tab-pane" aria-selected="false">gourmet</button>
-         </li>
-         <li class="nav-item" role="presentation">
-            <button class="nav-link text-uppercase" id="world-blend-tab" data-bs-toggle="tab" data-bs-target="#world-blend-tab-pane" type="button" role="tab" aria-controls="world-blend-tab-pane" aria-selected="false">world blend</button>
-         </li>
-         <li class="nav-item" role="presentation">
-            <button class="nav-link text-uppercase" id="the-collection-tab" data-bs-toggle="tab" data-bs-target="#the-collection-tab-pane" type="button" role="tab" aria-controls="the-collection-tab-pane" aria-selected="false">the collection</button>
-         </li>
-         <li class="nav-item" role="presentation">
-            <button class="nav-link text-uppercase" id="kraton-tab" data-bs-toggle="tab" data-bs-target="#kraton-tab-pane" type="button" role="tab" aria-controls="kraton-tab-pane" aria-selected="false">kraton</button>
-         </li>
-         <li class="nav-item" role="presentation">
-            <button class="nav-link text-uppercase" id="accessories-tab" data-bs-toggle="tab" data-bs-target="#accessories-tab-pane" type="button" role="tab" aria-controls="accessories-tab-pane" aria-selected="false">accessories</button>
-         </li>
-      </ul>
+      <div class="overflow-auto">
+         <div class="d-flex">
+            <ul class="nav nav-pills flex-nowrap text-nowrap mx-auto" id="brandTab" role="tabList">
+               <li class="nav-item" role="presentation">
+                  <button class="nav-link text-uppercase active" id="single-origin-tab" data-bs-toggle="tab" data-bs-target="#single-origin-tab-pane" type="button" role="tab" aria-controls="single-origin-tab-pane" aria-selected="true">single origin</button>
+               </li>
+               <li class="nav-item" role="presentation">
+                  <button class="nav-link text-uppercase" id="gourmet-tab" data-bs-toggle="tab" data-bs-target="#gourmet-tab-pane" type="button" role="tab" aria-controls="gourmet-tab-pane" aria-selected="false">gourmet</button>
+               </li>
+               <li class="nav-item" role="presentation">
+                  <button class="nav-link text-uppercase" id="world-blend-tab" data-bs-toggle="tab" data-bs-target="#world-blend-tab-pane" type="button" role="tab" aria-controls="world-blend-tab-pane" aria-selected="false">world blend</button>
+               </li>
+               <li class="nav-item" role="presentation">
+                  <button class="nav-link text-uppercase" id="the-collection-tab" data-bs-toggle="tab" data-bs-target="#the-collection-tab-pane" type="button" role="tab" aria-controls="the-collection-tab-pane" aria-selected="false">the collection</button>
+               </li>
+               <li class="nav-item" role="presentation">
+                  <button class="nav-link text-uppercase" id="kraton-tab" data-bs-toggle="tab" data-bs-target="#kraton-tab-pane" type="button" role="tab" aria-controls="kraton-tab-pane" aria-selected="false">kraton</button>
+               </li>
+               <li class="nav-item" role="presentation">
+                  <button class="nav-link text-uppercase" id="accessories-tab" data-bs-toggle="tab" data-bs-target="#accessories-tab-pane" type="button" role="tab" aria-controls="accessories-tab-pane" aria-selected="false">accessories</button>
+               </li>
+            </ul>
+         </div>
+      </div>
 
       <div class="brand-list tab-content" id="brandTabContent">
          
          <!-- tab pane category item -->
          <div class="brand-category tab-pane fade show active" id="single-origin-tab-pane" role="tabpanel" aria-labelledby="single-origin-tab" tabindex="0">
-            <div class="container py-5">
-               <ol class="list-unstyled mb-5 d-flex flex-wrap gap-4 justify-content-center">
-                  <li><a href="#" class="p-5 bg-primary rounded-circle d-block"></a></li>
-                  <li><a href="#" class="p-5 bg-primary rounded-circle d-block"></a></li>
-                  <li><a href="#" class="p-5 bg-primary rounded-circle d-block"></a></li>
-                  <li><a href="#" class="p-5 bg-primary rounded-circle d-block"></a></li>
-                  <li><a href="#" class="p-5 bg-primary rounded-circle d-block"></a></li>
-                  <li><a href="#" class="p-5 bg-primary rounded-circle d-block"></a></li>
-                  <li><a href="#" class="p-5 bg-primary rounded-circle d-block"></a></li>
+            <h2 class="visually-hidden">Single Origin</h2>
+            <header class="header-tab-content overflow-auto bg-light-subtle">
+               <ol class="menu-brand-list list-unstyled d-flex gap-4 p-4 mb-0 justify-content-lg-center">
+                  <li class="menu-brand-item">
+                     <a href="#section-aceh-gayo" class="text-reset text-decoration-none">
+                        <figure class="figure mb-0">
+                           <div class="figure-img ratio ratio-1x1 rounded-circle mx-auto" style="background-color: #0c86ad;">
+                              <img src="img/supresso-can-aceh-gayo.png" alt="" loading="lazy" class="object-fit-contain">
+                           </div>
+                           <figcaption class="figure-caption text-reset text-capitalize text-center small">aceh gayo</figcaption>
+                        </figure>
+                     </a>
+                  </li>
+                  <li class="menu-brand-item">
+                     <a href="#section-sumatra-mandheling" class="text-reset text-decoration-none">
+                        <figure class="figure mb-0">
+                           <div class="figure-img ratio ratio-1x1 rounded-circle mx-auto" style="background-color: #b64935;">
+                              <img src="img/supresso-can-sumatra-mandheling.png" alt="" loading="lazy" class="object-fit-contain">
+                           </div>
+                           <figcaption class="figure-caption text-reset text-capitalize text-center small">sumatra mandheling</figcaption>
+                        </figure>
+                     </a>
+                  </li>
+                  <li class="menu-brand-item">
+                     <a href="#section-lampung" class="text-reset text-decoration-none">
+                        <figure class="figure mb-0">
+                           <div class="figure-img ratio ratio-1x1 rounded-circle mx-auto" style="background-color: #d23666;">
+                              <img src="img/supresso-can-lampung.png" alt="" loading="lazy" class="object-fit-contain">
+                           </div>
+                           <figcaption class="figure-caption text-reset text-capitalize text-center small">lampung</figcaption>
+                        </figure>
+                     </a>
+                  </li>
+                  <li class="menu-brand-item">
+                     <a href="#section-manglayang" class="text-reset text-decoration-none">
+                        <figure class="figure mb-0">
+                           <div class="figure-img ratio ratio-1x1 rounded-circle mx-auto" style="background-color: #fe7678;">
+                              <img src="img/supresso-can-manglayang.png" alt="" loading="lazy" class="object-fit-contain">
+                           </div>
+                           <figcaption class="figure-caption text-reset text-capitalize text-center small">manglayang</figcaption>
+                        </figure>
+                     </a>
+                  </li>
+                  <li class="menu-brand-item">
+                     <a href="#section-west-java" class="text-reset text-decoration-none">
+                        <figure class="figure mb-0">
+                           <div class="figure-img ratio ratio-1x1 rounded-circle mx-auto" style="background-color: #308158;">
+                              <img src="img/supresso-can-west-java.png" alt="" loading="lazy" class="object-fit-contain">
+                           </div>
+                           <figcaption class="figure-caption text-reset text-capitalize text-center small">west java</figcaption>
+                        </figure>
+                     </a>
+                  </li>
+                  <li class="menu-brand-item">
+                     <a href="#section-java" class="text-reset text-decoration-none">
+                        <figure class="figure mb-0">
+                           <div class="figure-img ratio ratio-1x1 rounded-circle mx-auto" style="background-color: #8cc43d;">
+                              <img src="img/supresso-can-java.png" alt="" loading="lazy" class="object-fit-contain">
+                           </div>
+                           <figcaption class="figure-caption text-reset text-capitalize text-center small">java</figcaption>
+                        </figure>
+                     </a>
+                  </li>
+                  <li class="menu-brand-item">
+                     <a href="#section-bali-kintamani" class="text-reset text-decoration-none">
+                        <figure class="figure mb-0">
+                           <div class="figure-img ratio ratio-1x1 rounded-circle mx-auto" style="background-color: #d8303f;">
+                              <img src="img/supresso-can-bali-kintamani.png" alt="" loading="lazy" class="object-fit-contain">
+                           </div>
+                           <figcaption class="figure-caption text-reset text-capitalize text-center small">bali kintamani</figcaption>
+                        </figure>
+                     </a>
+                  </li>
+                  <li class="menu-brand-item">
+                     <a href="#section-aceh-gayo" class="text-reset text-decoration-none">
+                        <figure class="figure mb-0">
+                           <div class="figure-img ratio ratio-1x1 rounded-circle mx-auto" style="background-color: #d949bb;">
+                              <img src="img/supresso-can-flores-bajawa.png" alt="" loading="lazy" class="object-fit-contain">
+                           </div>
+                           <figcaption class="figure-caption text-reset text-capitalize text-center small">flores bajawa</figcaption>
+                        </figure>
+                     </a>
+                  </li>
+                  <li class="menu-brand-item">
+                     <a href="#section-aceh-gayo" class="text-reset text-decoration-none">
+                        <figure class="figure mb-0">
+                           <div class="figure-img ratio ratio-1x1 rounded-circle mx-auto" style="background-color: #f5c644;">
+                              <img src="img/supresso-can-toraja-kalosi.png" alt="" loading="lazy" class="object-fit-contain">
+                           </div>
+                           <figcaption class="figure-caption text-reset text-capitalize text-center small">toraja kalosi</figcaption>
+                        </figure>
+                     </a>
+                  </li>
                </ol>
-            </div>
+            </header>
+            <ol class="brand-list list-unstyled mb-0">
+               <!-- <li class="brand-item"><script src="partials/brand-item.js"></script></li> -->
+               <!-- <li class="brand-item"><script src="partials/brand-item.js"></script></li> -->
+               <!-- <li class="brand-item"><script src="partials/brand-item.js"></script></li> -->
+               <!-- <li class="brand-item"><script src="partials/brand-item.js"></script></li> -->
+               <!-- <li class="brand-item"><script src="partials/brand-item.js"></script></li> -->
+
+               <li class="brand-item">
+                  <div id="section-aceh-gayo" class="header-brand text-white position-relative z-0 overflow-hidden" style="background-color: #0c86ad;">
+                     <div class="container">
+                        <div class="row g-0 justify-content-between align-items-end">
+                           <div class="col col-12 col-md-12 col-lg-7 ms-lg-auto position-lg-absolute top-lg-0 end-lg-0 z-1">
+                              <img src="img/map-aceh.png" alt="" loading="lazy" class="img-fluid w-100 img-map opacity-lg-50">
+                           </div>
+                           <div class="col col-12 position-absolute top-0 end-0 bottom-0 start-0 z-1 inset-bg d-none d-lg-block"></div>
+                           <div class="col col-12 col-md col-lg-6 col-xxl-5 z-2">
+                              <h3 class="product-title display-5 fw-bold text-capitalize">aceh gayo</h3>
+                              <p class="product-description">Kopi Aceh Gayo sering dipakai sebagai bahan utama café latté. Rasa naturalnya yang khas dengan tekstur yang halus sangat pas dengan nuansa cokelat dan rempah di dalamnya. Keasamannya yang sedang juga menghasilkan sentuhan karamel, menjadi kombinasi rasa rempah dan manis. Rasa unik yang selalu dinantikan.</p>
+                              <p class="product-process text-uppercase">FULL CITY ROAST</p>
+                              <p class="product-taste text-capitalize">Nuansa rempah - Karamel & Cokelat - Buah segar - Natural</p>
+                           </div>
+                           <div class="col col-12 col-md-auto z-2">
+                              <p class="product-accidity text-capitalize">medium accidity <br> &#9679; &#9679; &#9679; &#9680; &#9675;</p>
+                              <p class="product-viscosity text-capitalize">mild body <br> &#9679; &#9679; &#9679; &#9680; &#9675;</p>
+                              <p class="product-ingredient text-capitalize">100% Kopi Arabica</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="body-brand z-1 pb-lg-5">
+                     <div class="container py-5">
+                        <div class="product-list">
+                           <script src="partials/product-item.js"></script>
+                           <script src="partials/product-item.js"></script>
+                           <script src="partials/product-item.js"></script>
+                           <script src="partials/product-item.js"></script>
+                           <script src="partials/product-item.js"></script>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+
+               <li class="brand-item">
+                  <div id="section-sumatra-mandheling" class="header-brand text-white position-relative z-0 overflow-hidden" style="background-color: #b64935;">
+                     <div class="container">
+                        <div class="row g-0 justify-content-between align-items-end">
+                           <div class="col col-12 col-md-12 col-lg-7 ms-lg-auto position-lg-absolute top-lg-0 end-lg-0 z-1">
+                              <img src="img/map-aceh.png" alt="" loading="lazy" class="img-fluid w-100 img-map opacity-lg-50">
+                           </div>
+                           <div class="col col-12 position-absolute top-0 end-0 bottom-0 start-0 z-1 inset-bg d-none d-lg-block"></div>
+                           <div class="col col-12 col-md col-lg-6 col-xxl-5 z-2">
+                              <h3 class="product-title display-5 fw-bold text-capitalize">sumatra mandheling</h3>
+                              <p class="product-description">Kopi Aceh Gayo sering dipakai sebagai bahan utama café latté. Rasa naturalnya yang khas dengan tekstur yang halus sangat pas dengan nuansa cokelat dan rempah di dalamnya. Keasamannya yang sedang juga menghasilkan sentuhan karamel, menjadi kombinasi rasa rempah dan manis. Rasa unik yang selalu dinantikan.</p>
+                              <p class="product-process text-uppercase">FULL CITY ROAST</p>
+                              <p class="product-taste text-capitalize">Nuansa rempah - Karamel & Cokelat - Buah segar - Natural</p>
+                           </div>
+                           <div class="col col-12 col-md-auto z-2">
+                              <p class="product-accidity text-capitalize">medium accidity <br> &#9679; &#9679; &#9679; &#9680; &#9675;</p>
+                              <p class="product-viscosity text-capitalize">mild body <br> &#9679; &#9679; &#9679; &#9680; &#9675;</p>
+                              <p class="product-ingredient text-capitalize">100% Kopi Arabica</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="body-brand z-1 pb-lg-5">
+                     <div class="container py-5">
+                        <div class="product-list">
+                           <script src="partials/product-item.js"></script>
+                           <script src="partials/product-item.js"></script>
+                           <script src="partials/product-item.js"></script>
+                           <script src="partials/product-item.js"></script>
+                           <script src="partials/product-item.js"></script>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+
+               <li class="brand-item">
+                  <div id="section-lampung" class="header-brand text-white position-relative z-0 overflow-hidden" style="background-color: #d23666;">
+                     <div class="container">
+                        <div class="row g-0 justify-content-between align-items-end">
+                           <div class="col col-12 col-md-12 col-lg-7 ms-lg-auto position-lg-absolute top-lg-0 end-lg-0 z-1">
+                              <img src="img/map-aceh.png" alt="" loading="lazy" class="img-fluid w-100 img-map opacity-lg-50">
+                           </div>
+                           <div class="col col-12 position-absolute top-0 end-0 bottom-0 start-0 z-1 inset-bg d-none d-lg-block"></div>
+                           <div class="col col-12 col-md col-lg-6 col-xxl-5 z-2">
+                              <h3 class="product-title display-5 fw-bold text-capitalize">lampung</h3>
+                              <p class="product-description">Kopi Aceh Gayo sering dipakai sebagai bahan utama café latté. Rasa naturalnya yang khas dengan tekstur yang halus sangat pas dengan nuansa cokelat dan rempah di dalamnya. Keasamannya yang sedang juga menghasilkan sentuhan karamel, menjadi kombinasi rasa rempah dan manis. Rasa unik yang selalu dinantikan.</p>
+                              <p class="product-process text-uppercase">FULL CITY ROAST</p>
+                              <p class="product-taste text-capitalize">Nuansa rempah - Karamel & Cokelat - Buah segar - Natural</p>
+                           </div>
+                           <div class="col col-12 col-md-auto z-2">
+                              <p class="product-accidity text-capitalize">medium accidity <br> &#9679; &#9679; &#9679; &#9680; &#9675;</p>
+                              <p class="product-viscosity text-capitalize">mild body <br> &#9679; &#9679; &#9679; &#9680; &#9675;</p>
+                              <p class="product-ingredient text-capitalize">100% Kopi Arabica</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="body-brand z-1 pb-lg-5">
+                     <div class="container py-5">
+                        <div class="product-list">
+                           <script src="partials/product-item.js"></script>
+                           <script src="partials/product-item.js"></script>
+                           <script src="partials/product-item.js"></script>
+                           <script src="partials/product-item.js"></script>
+                           <script src="partials/product-item.js"></script>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+
+               <li class="brand-item">
+                  <div id="section-manglayang" class="header-brand text-white position-relative z-0 overflow-hidden" style="background-color: #fe7678;">
+                     <div class="container">
+                        <div class="row g-0 justify-content-between align-items-end">
+                           <div class="col col-12 col-md-12 col-lg-7 ms-lg-auto position-lg-absolute top-lg-0 end-lg-0 z-1">
+                              <img src="img/map-aceh.png" alt="" loading="lazy" class="img-fluid w-100 img-map opacity-lg-50">
+                           </div>
+                           <div class="col col-12 position-absolute top-0 end-0 bottom-0 start-0 z-1 inset-bg d-none d-lg-block"></div>
+                           <div class="col col-12 col-md col-lg-6 col-xxl-5 z-2">
+                              <h3 class="product-title display-5 fw-bold text-capitalize">manglayang</h3>
+                              <p class="product-description">Kopi Aceh Gayo sering dipakai sebagai bahan utama café latté. Rasa naturalnya yang khas dengan tekstur yang halus sangat pas dengan nuansa cokelat dan rempah di dalamnya. Keasamannya yang sedang juga menghasilkan sentuhan karamel, menjadi kombinasi rasa rempah dan manis. Rasa unik yang selalu dinantikan.</p>
+                              <p class="product-process text-uppercase">FULL CITY ROAST</p>
+                              <p class="product-taste text-capitalize">Nuansa rempah - Karamel & Cokelat - Buah segar - Natural</p>
+                           </div>
+                           <div class="col col-12 col-md-auto z-2">
+                              <p class="product-accidity text-capitalize">medium accidity <br> &#9679; &#9679; &#9679; &#9680; &#9675;</p>
+                              <p class="product-viscosity text-capitalize">mild body <br> &#9679; &#9679; &#9679; &#9680; &#9675;</p>
+                              <p class="product-ingredient text-capitalize">100% Kopi Arabica</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="body-brand z-1 pb-lg-5">
+                     <div class="container py-5">
+                        <div class="product-list">
+                           <script src="partials/product-item.js"></script>
+                           <script src="partials/product-item.js"></script>
+                           <script src="partials/product-item.js"></script>
+                           <script src="partials/product-item.js"></script>
+                           <script src="partials/product-item.js"></script>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+
+               <li class="brand-item">
+                  <div id="section-west-java" class="header-brand text-white position-relative z-0 overflow-hidden" style="background-color: #308158;">
+                     <div class="container">
+                        <div class="row g-0 justify-content-between align-items-end">
+                           <div class="col col-12 col-md-12 col-lg-7 ms-lg-auto position-lg-absolute top-lg-0 end-lg-0 z-1">
+                              <img src="img/map-aceh.png" alt="" loading="lazy" class="img-fluid w-100 img-map opacity-lg-50">
+                           </div>
+                           <div class="col col-12 position-absolute top-0 end-0 bottom-0 start-0 z-1 inset-bg d-none d-lg-block"></div>
+                           <div class="col col-12 col-md col-lg-6 col-xxl-5 z-2">
+                              <h3 class="product-title display-5 fw-bold text-capitalize">west java</h3>
+                              <p class="product-description">Kopi Aceh Gayo sering dipakai sebagai bahan utama café latté. Rasa naturalnya yang khas dengan tekstur yang halus sangat pas dengan nuansa cokelat dan rempah di dalamnya. Keasamannya yang sedang juga menghasilkan sentuhan karamel, menjadi kombinasi rasa rempah dan manis. Rasa unik yang selalu dinantikan.</p>
+                              <p class="product-process text-uppercase">FULL CITY ROAST</p>
+                              <p class="product-taste text-capitalize">Nuansa rempah - Karamel & Cokelat - Buah segar - Natural</p>
+                           </div>
+                           <div class="col col-12 col-md-auto z-2">
+                              <p class="product-accidity text-capitalize">medium accidity <br> &#9679; &#9679; &#9679; &#9680; &#9675;</p>
+                              <p class="product-viscosity text-capitalize">mild body <br> &#9679; &#9679; &#9679; &#9680; &#9675;</p>
+                              <p class="product-ingredient text-capitalize">100% Kopi Arabica</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="body-brand z-1 pb-lg-5">
+                     <div class="container py-5">
+                        <div class="product-list">
+                           <script src="partials/product-item.js"></script>
+                           <script src="partials/product-item.js"></script>
+                           <script src="partials/product-item.js"></script>
+                           <script src="partials/product-item.js"></script>
+                           <script src="partials/product-item.js"></script>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+
+               <li class="brand-item">
+                  <div id="section-java" class="header-brand text-white position-relative z-0 overflow-hidden" style="background-color: #8cc43d;">
+                     <div class="container">
+                        <div class="row g-0 justify-content-between align-items-end">
+                           <div class="col col-12 col-md-12 col-lg-7 ms-lg-auto position-lg-absolute top-lg-0 end-lg-0 z-1">
+                              <img src="img/map-aceh.png" alt="" loading="lazy" class="img-fluid w-100 img-map opacity-lg-50">
+                           </div>
+                           <div class="col col-12 position-absolute top-0 end-0 bottom-0 start-0 z-1 inset-bg d-none d-lg-block"></div>
+                           <div class="col col-12 col-md col-lg-6 col-xxl-5 z-2">
+                              <h3 class="product-title display-5 fw-bold text-capitalize">java</h3>
+                              <p class="product-description">Kopi Aceh Gayo sering dipakai sebagai bahan utama café latté. Rasa naturalnya yang khas dengan tekstur yang halus sangat pas dengan nuansa cokelat dan rempah di dalamnya. Keasamannya yang sedang juga menghasilkan sentuhan karamel, menjadi kombinasi rasa rempah dan manis. Rasa unik yang selalu dinantikan.</p>
+                              <p class="product-process text-uppercase">FULL CITY ROAST</p>
+                              <p class="product-taste text-capitalize">Nuansa rempah - Karamel & Cokelat - Buah segar - Natural</p>
+                           </div>
+                           <div class="col col-12 col-md-auto z-2">
+                              <p class="product-accidity text-capitalize">medium accidity <br> &#9679; &#9679; &#9679; &#9680; &#9675;</p>
+                              <p class="product-viscosity text-capitalize">mild body <br> &#9679; &#9679; &#9679; &#9680; &#9675;</p>
+                              <p class="product-ingredient text-capitalize">100% Kopi Arabica</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="body-brand z-1 pb-lg-5">
+                     <div class="container py-5">
+                        <div class="product-list">
+                           <script src="partials/product-item.js"></script>
+                           <script src="partials/product-item.js"></script>
+                           <script src="partials/product-item.js"></script>
+                           <script src="partials/product-item.js"></script>
+                           <script src="partials/product-item.js"></script>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+
+               <li class="brand-item">
+                  <div id="section-bali-kintamani" class="header-brand text-white position-relative z-0 overflow-hidden" style="background-color: #d8303f;">
+                     <div class="container">
+                        <div class="row g-0 justify-content-between align-items-end">
+                           <div class="col col-12 col-md-12 col-lg-7 ms-lg-auto position-lg-absolute top-lg-0 end-lg-0 z-1">
+                              <img src="img/map-aceh.png" alt="" loading="lazy" class="img-fluid w-100 img-map opacity-lg-50">
+                           </div>
+                           <div class="col col-12 position-absolute top-0 end-0 bottom-0 start-0 z-1 inset-bg d-none d-lg-block"></div>
+                           <div class="col col-12 col-md col-lg-6 col-xxl-5 z-2">
+                              <h3 class="product-title display-5 fw-bold text-capitalize">bali kintamani</h3>
+                              <p class="product-description">Kopi Aceh Gayo sering dipakai sebagai bahan utama café latté. Rasa naturalnya yang khas dengan tekstur yang halus sangat pas dengan nuansa cokelat dan rempah di dalamnya. Keasamannya yang sedang juga menghasilkan sentuhan karamel, menjadi kombinasi rasa rempah dan manis. Rasa unik yang selalu dinantikan.</p>
+                              <p class="product-process text-uppercase">FULL CITY ROAST</p>
+                              <p class="product-taste text-capitalize">Nuansa rempah - Karamel & Cokelat - Buah segar - Natural</p>
+                           </div>
+                           <div class="col col-12 col-md-auto z-2">
+                              <p class="product-accidity text-capitalize">medium accidity <br> &#9679; &#9679; &#9679; &#9680; &#9675;</p>
+                              <p class="product-viscosity text-capitalize">mild body <br> &#9679; &#9679; &#9679; &#9680; &#9675;</p>
+                              <p class="product-ingredient text-capitalize">100% Kopi Arabica</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="body-brand z-1 pb-lg-5">
+                     <div class="container py-5">
+                        <div class="product-list">
+                           <script src="partials/product-item.js"></script>
+                           <script src="partials/product-item.js"></script>
+                           <script src="partials/product-item.js"></script>
+                           <script src="partials/product-item.js"></script>
+                           <script src="partials/product-item.js"></script>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+            </ol>
          </div>
          
          <!-- tab pane category item -->
-         <div class="brand-category tab-pane fade" id="gourmet-tab-pane" role="tabpanel" aria-labelledby="gourmet-tab" tabindex="0">gourmet</div>
+         <div class="brand-category tab-pane fade" id="gourmet-tab-pane" role="tabpanel" aria-labelledby="gourmet-tab" tabindex="0">
+            <h2 class="visually-hidden">Gourmet</h2>
+         </div>
          
          <!-- tab pane category item -->
-         <div class="brand-category tab-pane fade" id="world-blend-tab-pane" role="tabpanel" aria-labelledby="world-blend-tab" tabindex="0">world blend</div>
+         <div class="brand-category tab-pane fade" id="world-blend-tab-pane" role="tabpanel" aria-labelledby="world-blend-tab" tabindex="0">
+            <h2 class="visually-hidden">World Blend</h2>
+         </div>
          
          <!-- tab pane category item -->
-         <div class="brand-category tab-pane fade" id="the-collection-tab-pane" role="tabpanel" aria-labelledby="the-collection-tab" tabindex="0">the collection</div>
+         <div class="brand-category tab-pane fade" id="the-collection-tab-pane" role="tabpanel" aria-labelledby="the-collection-tab" tabindex="0">
+            <h2 class="visually-hidden">The Collection</h2>
+         </div>
          
          <!-- tab pane category item -->
-         <div class="brand-category tab-pane fade" id="kraton-tab-pane" role="tabpanel" aria-labelledby="kraton-tab" tabindex="0">kraton</div>
+         <div class="brand-category tab-pane fade" id="kraton-tab-pane" role="tabpanel" aria-labelledby="kraton-tab" tabindex="0">
+            <h2 class="visually-hidden">Kraton</h2>
+         </div>
          
          <!-- tab pane category item -->
-         <div class="brand-category tab-pane fade" id="accessories-tab-pane" role="tabpanel" aria-labelledby="accessories-tab" tabindex="0">accessories</div>
+         <div class="brand-category tab-pane fade" id="accessories-tab-pane" role="tabpanel" aria-labelledby="accessories-tab" tabindex="0">
+            <h2 class="visually-hidden">Accessories</h2>
+         </div>
 
       </div>
       

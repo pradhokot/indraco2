@@ -1,0 +1,60 @@
+.nav-pills {
+   --bs-nav-pills-border-radius: 0;
+   --bs-nav-pills-link-active-bg: var(--bs-light-bg-subtle);
+   --bs-nav-pills-link-active-color: var(--bs-body-color);
+   --bs-nav-link-hover-color: var(--bs-body-color);
+   --bs-nav-link-color: rgba(var(--bs-body-color-rgb), .75);
+}
+
+#brandTab .nav-link {
+   padding: .5rem 1rem;
+   border-top-left-radius: var(--bs-border-radius);
+   border-top-right-radius: var(--bs-border-radius);
+}
+
+.menu-brand-item .figure {
+   width: 5.5rem;
+}
+
+.menu-brand-item .figure-img {
+   width: 4.5rem;
+}
+
+.menu-brand-item>a:hover img.object-fit-contain {
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%) scale(1);
+   transition: .3s ease;
+}
+
+.menu-brand-item>a:hover img.object-fit-contain {
+   transform: translate(-50%, -60%) scale(1.7);
+}
+
+.header-brand {
+   padding-bottom: 6rem;
+}
+
+@media (min-width: 992px) {
+   .header-brand {
+      padding-top: 6rem;
+   }
+}
+
+.body-brand {
+   margin-top: -8rem;
+}
+
+.product-list {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(calc(120px + 3vw), 1fr));
+   gap: 1rem;
+}
+
+.inset-bg {
+   background-image: radial-gradient(white, transparent, transparent);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   opacity: .5;
+}
