@@ -30,7 +30,7 @@
    <a href="#main-content" class="visually-hidden-focusable">Lewati ke konten utama</a>
    <script src="partials/page-header.js"></script>
    <script src="partials/offcanvas-navigation.js"></script>
-   <main id="main-content">
+   <main id="main-content" style="padding-bottom: calc(140px + 2vw);">
 
       <!-- Breadcrumb -->
       <div class="bg-body-tertiary border-bottom">
@@ -45,9 +45,10 @@
       </div>
       
       <div class="container py-5 text-center" style="max-width: 860px;">
-         <img src="img/logo-supresso.png" data-light="img/logo-supresso.png" data-dark="img/logo-supresso.png" alt="Logo Supresso" loading="lazy" class="theme-image" style="max-width: 21rem; max-height: 8rem;">
+         <a href="https://supresso.com/" target="_blank" class="text-reset text-decoration-none">
+            <img src="img/logo-supresso.png" data-light="img/logo-supresso.png" data-dark="img/logo-supresso.png" alt="Logo Supresso" loading="lazy" class="theme-image" style="max-width: 21rem; max-height: 8rem;">
+         </a>
          <p class="my-4">Kopi premium terbaik dengan keaslian rasa indonesia dengan biji kopi yang dipanen langsung dari timur hingga barat, koleksi kopi asli Indonesia.</p>
-         <a href="#" class="btn btn-invert rounded-0 text-capitalize">kunjungi website supresso</a>
       </div>
 
       <div class="overflow-auto">
@@ -83,7 +84,7 @@
             <header class="header-tab-content sticky-top overflow-auto bg-light-subtle">
                <ol class="menu-brand-list list-unstyled d-flex gap-4 p-4 mb-0 justify-content-lg-center">
                   <li class="menu-brand-item">
-                     <a href="#section-aceh-gayo" class="text-reset text-decoration-none">
+                     <a href="#single-origin-tab-pane" class="text-reset text-decoration-none">
                         <figure class="figure mb-0">
                            <div class="figure-img ratio ratio-1x1 rounded-circle mx-auto" style="background-color: #0c86ad;">
                               <img src="img/supresso-can-aceh-gayo.png" alt="" loading="lazy" class="object-fit-contain">
@@ -153,7 +154,7 @@
                      </a>
                   </li>
                   <li class="menu-brand-item">
-                     <a href="#section-aceh-gayo" class="text-reset text-decoration-none">
+                     <a href="#single-origin-tab-pane" class="text-reset text-decoration-none">
                         <figure class="figure mb-0">
                            <div class="figure-img ratio ratio-1x1 rounded-circle mx-auto" style="background-color: #d949bb;">
                               <img src="img/supresso-can-flores-bajawa.png" alt="" loading="lazy" class="object-fit-contain">
@@ -163,7 +164,7 @@
                      </a>
                   </li>
                   <li class="menu-brand-item">
-                     <a href="#section-aceh-gayo" class="text-reset text-decoration-none">
+                     <a href="#single-origin-tab-pane" class="text-reset text-decoration-none">
                         <figure class="figure mb-0">
                            <div class="figure-img ratio ratio-1x1 rounded-circle mx-auto" style="background-color: #f5c644;">
                               <img src="img/supresso-can-toraja-kalosi.png" alt="" loading="lazy" class="object-fit-contain">
@@ -181,8 +182,8 @@
                <!-- <li class="brand-item"><script src="partials/brand-item.js"></script></li> -->
                <!-- <li class="brand-item"><script src="partials/brand-item.js"></script></li> -->
 
-               <li class="brand-item">
-                  <div id="section-aceh-gayo" class="header-brand text-white position-relative z-0 overflow-hidden" style="background-color: #0c86ad;">
+               <li class="brand-item" id="section-aceh-gayo">
+                  <div class="header-brand text-white position-relative z-0 overflow-hidden" style="background-color: #0c86ad;">
                      <div class="container">
                         <div class="row gx-md-5 justify-content-md-between">
                            <div class="col col-12 col-md-12 col-lg-7 ms-lg-auto position-lg-absolute top-lg-0 end-lg-0 z-1">
@@ -203,8 +204,8 @@
                         </div>
                      </div>
                   </div>
-                  <div class="body-brand z-1 pb-lg-5">
-                     <div class="container py-5">
+                  <div class="body-brand z-1">
+                     <div class="container">
                         <div class="product-list">
                            <script src="partials/product-item.js"></script>
                            <script src="partials/product-item.js"></script>
@@ -216,8 +217,8 @@
                   </div>
                </li>
 
-               <li class="brand-item">
-                  <div id="section-sumatra-mandheling" class="header-brand text-white position-relative z-0 overflow-hidden" style="background-color: #b64935;">
+               <li class="brand-item" id="section-sumatra-mandheling">
+                  <div class="header-brand text-white position-relative z-0 overflow-hidden" style="background-color: #b64935;">
                      <div class="container">
                         <div class="row gx-md-5 justify-content-md-between">
                            <div class="col col-12 col-md-12 col-lg-7 ms-lg-auto position-lg-absolute top-lg-0 end-lg-0 z-1">
@@ -238,8 +239,8 @@
                         </div>
                      </div>
                   </div>
-                  <div class="body-brand z-1 pb-lg-5">
-                     <div class="container py-5">
+                  <div class="body-brand z-1">
+                     <div class="container">
                         <div class="product-list">
                            <script src="partials/product-item.js"></script>
                            <script src="partials/product-item.js"></script>
@@ -251,8 +252,8 @@
                   </div>
                </li>
 
-               <li class="brand-item">
-                  <div id="section-lampung" class="header-brand text-white position-relative z-0 overflow-hidden" style="background-color: #d23666;">
+               <li class="brand-item" id="section-lampung">
+                  <div class="header-brand text-white position-relative z-0 overflow-hidden" style="background-color: #d23666;">
                      <div class="container">
                         <div class="row gx-md-5 justify-content-md-between">
                            <div class="col col-12 col-md-12 col-lg-7 ms-lg-auto position-lg-absolute top-lg-0 end-lg-0 z-1">
@@ -273,8 +274,8 @@
                         </div>
                      </div>
                   </div>
-                  <div class="body-brand z-1 pb-lg-5">
-                     <div class="container py-5">
+                  <div class="body-brand z-1">
+                     <div class="container">
                         <div class="product-list">
                            <script src="partials/product-item.js"></script>
                            <script src="partials/product-item.js"></script>
@@ -286,8 +287,8 @@
                   </div>
                </li>
 
-               <li class="brand-item">
-                  <div id="section-manglayang" class="header-brand text-white position-relative z-0 overflow-hidden" style="background-color: #fe7678;">
+               <li class="brand-item" id="section-manglayang">
+                  <div class="header-brand text-white position-relative z-0 overflow-hidden" style="background-color: #fe7678;">
                      <div class="container">
                         <div class="row gx-md-5 justify-content-md-between">
                            <div class="col col-12 col-md-12 col-lg-7 ms-lg-auto position-lg-absolute top-lg-0 end-lg-0 z-1">
@@ -308,8 +309,8 @@
                         </div>
                      </div>
                   </div>
-                  <div class="body-brand z-1 pb-lg-5">
-                     <div class="container py-5">
+                  <div class="body-brand z-1">
+                     <div class="container">
                         <div class="product-list">
                            <script src="partials/product-item.js"></script>
                            <script src="partials/product-item.js"></script>
@@ -321,8 +322,8 @@
                   </div>
                </li>
 
-               <li class="brand-item">
-                  <div id="section-west-java" class="header-brand text-white position-relative z-0 overflow-hidden" style="background-color: #308158;">
+               <li class="brand-item" id="section-west-java">
+                  <div class="header-brand text-white position-relative z-0 overflow-hidden" style="background-color: #308158;">
                      <div class="container">
                         <div class="row gx-md-5 justify-content-md-between">
                            <div class="col col-12 col-md-12 col-lg-7 ms-lg-auto position-lg-absolute top-lg-0 end-lg-0 z-1">
@@ -343,8 +344,8 @@
                         </div>
                      </div>
                   </div>
-                  <div class="body-brand z-1 pb-lg-5">
-                     <div class="container py-5">
+                  <div class="body-brand z-1">
+                     <div class="container">
                         <div class="product-list">
                            <script src="partials/product-item.js"></script>
                            <script src="partials/product-item.js"></script>
@@ -356,8 +357,8 @@
                   </div>
                </li>
 
-               <li class="brand-item">
-                  <div id="section-java" class="header-brand text-white position-relative z-0 overflow-hidden" style="background-color: #8cc43d;">
+               <li class="brand-item" id="section-java">
+                  <div class="header-brand text-white position-relative z-0 overflow-hidden" style="background-color: #8cc43d;">
                      <div class="container">
                         <div class="row gx-md-5 justify-content-md-between">
                            <div class="col col-12 col-md-12 col-lg-7 ms-lg-auto position-lg-absolute top-lg-0 end-lg-0 z-1">
@@ -378,8 +379,8 @@
                         </div>
                      </div>
                   </div>
-                  <div class="body-brand z-1 pb-lg-5">
-                     <div class="container py-5">
+                  <div class="body-brand z-1">
+                     <div class="container">
                         <div class="product-list">
                            <script src="partials/product-item.js"></script>
                            <script src="partials/product-item.js"></script>
@@ -391,8 +392,8 @@
                   </div>
                </li>
 
-               <li class="brand-item">
-                  <div id="section-bali-kintamani" class="header-brand text-white position-relative z-0 overflow-hidden" style="background-color: #d8303f;">
+               <li class="brand-item" id="section-bali-kintamani">
+                  <div class="header-brand text-white position-relative z-0 overflow-hidden" style="background-color: #d8303f;">
                      <div class="container">
                         <div class="row gx-md-5 justify-content-md-between">
                            <div class="col col-12 col-md-12 col-lg-7 ms-lg-auto position-lg-absolute top-lg-0 end-lg-0 z-1">
@@ -413,8 +414,8 @@
                         </div>
                      </div>
                   </div>
-                  <div class="body-brand z-1 pb-lg-5">
-                     <div class="container py-5">
+                  <div class="body-brand z-1">
+                     <div class="container">
                         <div class="product-list">
                            <script src="partials/product-item.js"></script>
                            <script src="partials/product-item.js"></script>
@@ -494,6 +495,27 @@
             });
          }
       });
+   </script>
+   <script>
+      // Mengikuti tinggi .header-tab-content secara responsif untuk .brand-item:not(:first-child)
+      function updateBrandItemPadding() {
+         const headerTabContent = document.querySelector('.header-tab-content');
+         const brandItems = document.querySelectorAll('.brand-item:not(:first-child)');
+         // const brandItems = document.querySelectorAll('.brand-item');
+
+         if (headerTabContent && brandItems.length > 0) {
+            const headerHeight = headerTabContent.offsetHeight;
+            brandItems.forEach(item => {
+               item.style.paddingTop = headerHeight + 'px';
+            });
+         }
+      }
+
+      // Jalankan saat DOM selesai dimuat
+      document.addEventListener('DOMContentLoaded', updateBrandItemPadding);
+
+      // Update saat window di-resize untuk responsif
+      window.addEventListener('resize', updateBrandItemPadding);
    </script>
 </body>
 </html>
