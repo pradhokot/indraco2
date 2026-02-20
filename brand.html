@@ -13,6 +13,16 @@
    <link rel="stylesheet" href="css/brand.css">
    <style>
       /* * {outline: solid 1px green;} */
+      
+      /* Disable fixed-top dan transform animation hanya untuk halaman brand */
+      body {padding-top: 0;}
+      body>header {
+         position: static !important;
+         top: auto !important;
+         left: auto !important;
+         right: auto !important;
+         z-index: auto !important;
+      }
    </style>
 </head>
 <body data-active-link="product.html">
@@ -451,5 +461,39 @@
    <script src="js/bootstrap.bundle.min.js"></script>
    <script src="js/theme.js"></script>
    <script src="js/frontend.js"></script>
+   
+   <!-- Disable header transform animation saja untuk halaman brand -->
+   <script>
+      document.addEventListener('DOMContentLoaded', function () {
+         const header = document.querySelector('body>header');
+         if (header) {
+            // Nonaktifkan transform animation dari frontend.js
+            header.style.transition = 'none';
+            
+            // Tangkap semua perubahan style dan cegah transform
+            const originalSetAttribute = header.setAttribute;
+            header.setAttribute = function(name, value) {
+               if (name === 'style' && value.includes('transform')) {
+                  return; // Jangan apply style yang mengandung transform
+               }
+               return originalSetAttribute.call(this, name, value);
+            };
+            
+            // Juga cegah via style.transform
+            const styleDescriptor = Object.getOwnPropertyDescriptor(header.style, 'transform');
+            Object.defineProperty(header.style, 'transform', {
+               set: function(value) {
+                  // Cegah transform animation
+                  if (value && value !== 'translateY(0)' && value !== 'none') {
+                     return;
+                  }
+               },
+               get: function() {
+                  return 'translateY(0)';
+               }
+            });
+         }
+      });
+   </script>
 </body>
 </html>
