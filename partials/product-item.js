@@ -1,5 +1,5 @@
 document.writeln(`
-   <article class="card text-bg-light rounded-0 border-0 shadow h-100">
+   <article class="card bg-light-subtle rounded-0 border-0 h-100">
       <div class="card-header ratio ratio-1x1 border-0 bg-transparent p-0 rounded-0">
          <img src="img/supresso-can-aceh-gayo.png" alt="" loading="lazy" class="object-fit-cover">
       </div>

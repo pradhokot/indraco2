@@ -58,3 +58,9 @@
    background-size: cover;
    opacity: .5;
 }
+
+.header-tab-content {
+   position: sticky;
+   top: 0;
+   z-index: 10;
+}
