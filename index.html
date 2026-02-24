@@ -209,9 +209,64 @@
       
    </main>
    <script src="partials/page-footer.js"></script>
+   
+   <!-- Modal -->
+   <div class="modal fade" id="modalWelcome" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="modalWelcomeLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+         <div class="modal-content rounded-0 text-bg-primary">
+            <div class="modal-header">
+               <button type="button" class="btn-close border-0 shadow-none ms-a" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center px-4 pb-4">
+               <p class="fw-bold fs-3">"Kami percaya pertumbuhan dimulai dari kepercayaan dan kualitas"</p>
+               <p>Silahkan pilih perjalanan Anda bersama INDRACO</p>
+               <div class="d-flex flex-column flex-lg-row gap-2">
+                  <button type="button" class="btn btn-light rounded-0 shadow-none w-100" data-bs-dismiss="modal">PELAJARI LEBIH LANJUT</button>
+                  <a href="https://indracostore.com/" target="_blank" class="btn btn-light rounded-0 shadow-none w-100">INDRACOSTORE</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
    <script src="js/jquery-3.7.1.min.js"></script>
    <script src="js/bootstrap.bundle.min.js"></script>
    <script src="js/theme.js"></script>
    <script src="js/frontend.js"></script>
+   
+   <script>
+      // Kontrol Modal Welcome - Muncul saat pertama akses atau setelah 24 jam
+      document.addEventListener('DOMContentLoaded', function() {
+         const MODAL_KEY = 'modalWelcome_shown';
+         const MODAL_EXPIRY_KEY = 'modalWelcome_expiry';
+         const MODAL_EXPIRY_TIME = 24 * 60 * 60 * 1000; // 24 jam dalam milliseconds
+         const MODAL_EXPIRY_TIME = 5 * 60 * 1000; // 5 menit dalam milliseconds
+         
+         const modalElement = document.getElementById('modalWelcome');
+         const modalBootstrap = new bootstrap.Modal(modalElement);
+         
+         // Cek apakah modal sudah ditampilkan dalam sesi ini
+         const modalShownInSession = sessionStorage.getItem(MODAL_KEY);
+         
+         if (!modalShownInSession) {
+            // Cek apakah modal pernah ditampilkan dan belum expired
+            const lastShown = localStorage.getItem(MODAL_EXPIRY_KEY);
+            const now = new Date().getTime();
+            
+            if (!lastShown || now > parseInt(lastShown)) {
+               // Modal belum ditampilkan atau sudah expired, tampilkan modal
+               modalBootstrap.show();
+               
+               // Simpan di sessionStorage agar tidak ditampilkan lagi di sesi ini
+               sessionStorage.setItem(MODAL_KEY, 'true');
+               
+               // Simpan waktu expiry di localStorage (24 jam dari sekarang)
+               const expiryTime = now + MODAL_EXPIRY_TIME;
+               localStorage.setItem(MODAL_EXPIRY_KEY, expiryTime);
+            }
+         }
+      });
+   </script>
 </body>
 </html>
